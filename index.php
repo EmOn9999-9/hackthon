@@ -7,8 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="container ">
-    </div>
-    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, earum.</p>
+
 </body>
 </html>
