@@ -3,20 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>emon</title>
+    <title>Nexus</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="h-screen flex">
     <!-- Left side with pattern -->
-    <div class="hidden md:block w-1/2 bg-gray-900 h-full relative overflow-hidden">
-        <div class="absolute w-full h-full bg-[repeating-linear-gradient(135deg,_black_0px,_black_20px,_transparent_20px,_transparent_40px)]"></div>
-    </div>
-    
-    <!-- Right side login form -->
     <div class="w-full md:w-1/2 flex items-center justify-center p-6">
         <div class="max-w-md w-full space-y-6">
             <h1 class="text-3xl font-bold text-gray-900 flex items-center space-x-2">
-                <span class="text-black">Bondroy</span>
+                <span class="text-black">Nexus</span>
             </h1>
             <p class="text-gray-500">Welcome back!</p>
             
@@ -55,5 +50,11 @@
             </button>
         </div>
     </div>
+    
+    <!-- Right side login form -->
+     <div>
+        
+     </div>
+
 </body>
 </html>
