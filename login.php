@@ -40,7 +40,7 @@
             </div>
             
             <button class="w-full flex items-center justify-center border py-3 rounded-lg hover:bg-gray-100 space-x-2">
-                <img src="https://www.svgrepo.com/show/303108/google-icon-logo.svg" class="w-5 h-5"> 
+                <img src="https://cdn-icons-png.flaticon.com/128/2702/2702602.png" class="w-5 h-5"> 
                 <span>Continue with Google</span>
             </button>
             
