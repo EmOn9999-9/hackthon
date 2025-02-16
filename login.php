@@ -15,7 +15,7 @@
             </h1>
             <p class="text-gray-500">Welcome back!</p>
             
-            <form class="space-y-4">
+            <form action="index.php" class="space-y-4">
                 <div>
                     <input type="email" placeholder="name@email.com" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900">
                 </div>
@@ -40,7 +40,7 @@
             </div>
             
             <button class="w-full flex items-center justify-center border py-3 rounded-lg hover:bg-gray-100 space-x-2">
-                <img src="https://cdn-icons-png.flaticon.com/128/2702/2702602.png" class="w-5 h-5"> 
+                <img src="https://www.svgrepo.com/show/303108/google-icon-logo.svg" class="w-5 h-5"> 
                 <span>Continue with Google</span>
             </button>
             
@@ -48,9 +48,9 @@
     </div>
     
     <!-- Right side login form -->
-     <div>
-        hbdhjbsdhbj
-     </div>
+    <div class="hidden md:block w-1/2 bg-gray-900 h-full relative overflow-hidden">
+        <img src="https://as1.ftcdn.net/v2/jpg/04/13/24/78/1000_F_413247834_RVsMB3VgSMb7UyzRzBhU5Uooow1jd0iv.jpg" alt="" class=" h-full mt-5">
+    </div>
 
 </body>
 </html>
