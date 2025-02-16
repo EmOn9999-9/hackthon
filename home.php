@@ -12,11 +12,10 @@
             <img src="" alt="logo" class="h-12">
         </a>
         <div class="flex gap-4">
-            <a href="#">National</a>
-            <a href="#">International</a>
-            <a href="#">Sport</a>
-            <a href="#">Health</a>
-            <a href="#">Entertainment</a>
+            <a href="#">Services</a>
+            <a href="#">Blog</a>
+            <a href="#">Help</a>
+            <a href="#">More</a>
         </div>
     </nav>
 </body>
