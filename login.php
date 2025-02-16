@@ -15,7 +15,7 @@
             </h1>
             <p class="text-gray-500">Welcome back!</p>
             
-            <form action="index.php" class="space-y-4">
+            <form action="home.php" class="space-y-4">
                 <div>
                     <input type="email" placeholder="name@email.com" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900">
                 </div>
