@@ -44,16 +44,12 @@
                 <span>Continue with Google</span>
             </button>
             
-            <button class="w-full flex items-center justify-center border py-3 rounded-lg hover:bg-gray-100 space-x-2">
-                <img src="https://www.svgrepo.com/show/303115/twitter-icon.svg" class="w-5 h-5">
-                <span>Continue with Twitter</span>
-            </button>
         </div>
     </div>
     
     <!-- Right side login form -->
      <div>
-        
+
      </div>
 
 </body>
