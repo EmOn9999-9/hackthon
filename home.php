@@ -27,7 +27,14 @@
             </div>
             <a href="#">Blog</a>
             <a href="#">Help</a>
-            <a href="#">More</a>
+            <div class="relative">
+                <button onclick="toggleDropdown()" class="focus:outline-none">more ▼</button>
+                <div id="servicesDropdown" class="absolute hidden bg-white shadow-md mt-2 rounded-md w-40">
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Electrician</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Plumber</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Barber</a>
+                </div>
+            </div>
         </div>
     </nav>
 </body>
