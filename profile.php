@@ -6,8 +6,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Profile Page</title>
 </head>
-<body class="flex items-center justify-center min-h-screen bg-gray-100 w-full h-screen">
-    <div class="flex items-center justify-between w-full h-full max-w-6xl p-20 bg-white shadow-lg rounded-lg">
+<body class="flex items-center justify-center h-screen w-full">
+    <div class="flex items-center justify-between w-full h-full max-w-6xl p-20 bg-white ">
         <!-- Profile Section -->
         <div class="flex flex-col items-center w-1/3">
             <div class="w-60 h-60 bg-gray-400 rounded-full"></div>
