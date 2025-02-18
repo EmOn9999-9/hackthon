@@ -43,7 +43,7 @@
             </form>
             
             <!-- Already have an account? -->
-            <p class="text-center text-sm">Already have an account? <a href="#" class="text-black font-medium hover:underline">Sign in</a></p>
+            <p class="text-center text-sm">Already have an account? <a href="signin.php" class="text-black font-medium hover:underline">Sign in</a></p>
             
             <!-- Divider -->
             <div class="flex items-center justify-center space-x-2">
