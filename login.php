@@ -31,7 +31,7 @@
                 <button class="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800">Sign in</button>
             </form>
             
-            <p class="text-center text-sm">Don't have an account? <a href="#" class="text-black font-medium hover:underline">Sign up</a></p>
+            <p class="text-center text-sm">Don't have an account? <a href="signup.php" class="text-black font-medium hover:underline">Sign up</a></p>
             
             <div class="flex items-center justify-center space-x-2">
                 <div class="w-1/3 border-t"></div>
