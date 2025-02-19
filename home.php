@@ -34,14 +34,14 @@
                 <!-- Dropdown -->
                 <div class="relative">
                 <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                    Dropdown
+                    Services
                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </a>
                 <div class="absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-48">
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action</a>
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Another action</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Electrician</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Plumber</a>
                     <div class="border-t border-gray-200 my-1"></div>
                     <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Something else here</a>
                 </div>
