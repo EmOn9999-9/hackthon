@@ -3,27 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar with Dropdown</title>
+    <title>Navbar with Hover Dropdown</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        // JavaScript to handle dropdown toggle
-        document.addEventListener("DOMContentLoaded", function () {
-            const dropdownButton = document.querySelector(".dropdown-button");
-            const dropdownMenu = document.querySelector(".dropdown-menu");
-
-            dropdownButton.addEventListener("click", function (e) {
-                e.preventDefault(); // Prevent default link behavior
-                dropdownMenu.classList.toggle("hidden");
-            });
-
-            // Close dropdown when clicking outside
-            document.addEventListener("click", function (e) {
-                if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
-                    dropdownMenu.classList.add("hidden");
-                }
-            });
-        });
-    </script>
+    <style>
+        /* CSS for hover-based dropdown */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <nav class="bg-gray-100 shadow-md">
@@ -46,8 +33,8 @@
                     <!-- Home Link -->
                     <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</a>
                     <!-- Dropdown -->
-                    <div class="relative">
-                        <a href="#" class="dropdown-button text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                    <div class="relative dropdown">
+                        <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium flex items-center">
                             Dropdown
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
