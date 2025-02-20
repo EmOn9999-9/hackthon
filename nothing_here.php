@@ -3,113 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus - Sign Up</title>
+    <title>HomeFix - Find Skilled Workers</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="h-screen flex bg-[url('images/background2.avif')] bg-cover bg-center">
-    <!-- Left side with form -->
-    <div class="w-full md:w-1/2 flex items-center justify-center p-6">
-        <div class="max-w-md w-full space-y-6">
-            <h1 class="text-3xl font-bold text-gray-900 flex items-center space-x-2">
-                <span class="text-black">Nexus</span>
-            </h1>
-            <p class="text-gray-500">Create your account</p>
-            
-            <!-- Sign Up Form -->
-            <form id="signupForm" class="space-y-4">
-                <!-- Full Name -->
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-gray-800">HomeFix</span>
+                </div>
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-10">
+                    <a href="#" class="text-gray-800 hover:text-gray-600">Home</a>
+                    <a href="#services" class="text-gray-800 hover:text-gray-600">Services</a>
+                    <a href="#workers" class="text-gray-800 hover:text-gray-600">Workers</a>
+                    <a href="#testimonials" class="text-gray-800 hover:text-gray-600">Testimonials</a>
+                    <a href="#contact" class="text-gray-800 hover:text-gray-600">Contact</a>
+                </div>
+                <!-- Sign In Button -->
                 <div>
-                    <input type="text" placeholder="Full Name" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900" required>
+                    <a href="signin.php" class="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800">Sign In</a>
                 </div>
-                <!-- Email -->
-                <div>
-                    <input type="email" placeholder="name@email.com" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900" required>
-                </div>
-                <!-- Password -->
-                <div class="relative">
-                    <input type="password" id="password" placeholder="Password" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900" required>
-                    <!-- Eye icon for password -->
-                    <span class="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer" onclick="togglePasswordVisibility('password')">
-                        <svg id="password-eye" class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-                        </svg>
-                    </span>
-                </div>
-                <!-- Confirm Password -->
-                <div class="relative">
-                    <input type="password" id="confirmPassword" placeholder="Confirm Password" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900" required>
-                    <!-- Eye icon for confirm password -->
-                    <span class="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer" onclick="togglePasswordVisibility('confirmPassword')">
-                        <svg id="confirmPassword-eye" class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-                        </svg>
-                    </span>
-                </div>
-                <!-- Error Message -->
-                <div id="errorMessage" class="text-red-500 text-sm hidden">Passwords do not match!</div>
-                <!-- Terms and Conditions -->
-                <div class="flex items-center text-sm">
-                    <input type="checkbox" class="mr-2" required>
-                    <span>I agree to the <a href="#" class="text-black hover:underline">terms and conditions</a></span>
-                </div>
-                <!-- Sign Up Button -->
-                <button type="submit" class="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800">Sign Up</button>
-            </form>
-            
-            <!-- Already have an account? -->
-            <p class="text-center text-sm">Already have an account? <a href="signin.php" class="text-black font-medium hover:underline">Sign in</a></p>
-            
-            <!-- Divider -->
-            <div class="flex items-center justify-center space-x-2">
-                <div class="w-1/3 border-t"></div>
-                <span class="text-gray-500">or</span>
-                <div class="w-1/3 border-t"></div>
             </div>
-            
-            <!-- Continue with Google -->
-            <button class="w-full flex items-center justify-center border py-3 rounded-lg hover:bg-gray-100 space-x-2">
-                <img src="https://www.svgrepo.com/show/303108/google-icon-logo.svg" class="w-5 h-5"> 
-                <span>Continue with Google</span>
-            </button>
         </div>
-    </div>
+    </nav>
 
-    <script>
-        // Function to toggle password visibility
-        function togglePasswordVisibility(fieldId) {
-            const passwordField = document.getElementById(fieldId);
-            const eyeIcon = document.getElementById(`${fieldId}-eye`);
+    <!-- Hero Section -->
+    <header class="bg-[url('images/hero-bg.jpg')] bg-cover bg-center h-[400px] flex items-center justify-center">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Find Skilled Workers Near You</h1>
+            <p class="text-lg text-gray-200 mb-8">Carpenters, Plumbers, Electricians, and More</p>
+            <a href="#services" class="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800">Explore Services</a>
+        </div>
+    </header>
 
-            if (passwordField.type === "password") {
-                passwordField.type = "text";
-                eyeIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path>`;
-            } else {
-                passwordField.type = "password";
-                eyeIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>`;
-            }
-        }
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Carpenter -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+                    <img src="images/carpenter.png" alt="Carpenter" class="w-20 h-20 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Carpenter</h3>
+                    <p class="text-gray-600">Skilled carpenters for furniture, repairs, and custom woodwork.</p>
+                </div>
+                <!-- Plumber -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+                    <img src="images/plumber.png" alt="Plumber" class="w-20 h-20 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Plumber</h3>
+                    <p class="text-gray-600">Expert plumbers for leaks, installations, and maintenance.</p>
+                </div>
+                <!-- Electrician -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+                    <img src="images/electrician.png" alt="Electrician" class="w-20 h-20 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Electrician</h3>
+                    <p class="text-gray-600">Certified electricians for wiring, repairs, and installations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        // Form submission handling
-        document.getElementById('signupForm').addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent form submission
-            
-            const password = document.getElementById('password').value;
-            const confirmPassword = document.getElementById('confirmPassword').value;
-            const errorMessage = document.getElementById('errorMessage');
+    <!-- Featured Workers Section -->
+    <section id="workers" class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Workers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Worker 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="images/worker1.jpg" alt="Worker 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">John Doe</h3>
+                    <p class="text-gray-600 mb-4">Carpenter</p>
+                    <p class="text-gray-600">⭐️⭐️⭐️⭐️⭐️ (4.9/5)</p>
+                </div>
+                <!-- Worker 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="images/worker2.jpg" alt="Worker 2" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Jane Smith</h3>
+                    <p class="text-gray-600 mb-4">Plumber</p>
+                    <p class="text-gray-600">⭐️⭐️⭐️⭐️⭐️ (5.0/5)</p>
+                </div>
+                <!-- Worker 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="images/worker3.jpg" alt="Worker 3" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Mike Johnson</h3>
+                    <p class="text-gray-600 mb-4">Electrician</p>
+                    <p class="text-gray-600">⭐️⭐️⭐️⭐️⭐️ (4.8/5)</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            if (password !== confirmPassword) {
-                errorMessage.classList.remove('hidden');
-                return;
-            }
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 mb-4">"HomeFix helped me find a great carpenter for my custom furniture. Highly recommended!"</p>
+                    <p class="font-semibold">- Sarah Lee</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 mb-4">"The plumber was professional and fixed my leaky faucet in no time. Great service!"</p>
+                    <p class="font-semibold">- David Brown</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            errorMessage.classList.add('hidden');
-            
-            // If passwords match, redirect to home.php
-            window.location.href = 'home.php';
-        });
-    </script>
+    <!-- Call to Action Section -->
+    <section id="contact" class="py-16 bg-black text-white text-center">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4">Need a Skilled Worker?</h2>
+            <p class="text-gray-300 mb-8">Sign up now and get connected with the best professionals in your area.</p>
+            <a href="signup.php" class="bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-200">Sign Up Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2023 HomeFix. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
