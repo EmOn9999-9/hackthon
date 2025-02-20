@@ -12,7 +12,7 @@
         }
     </style>
 </head>
-<body class="h-screen bg-[url('images/background2.avif')] bg-cover bg-center">
+<body class="h-screen bg-[url('')] bg-cover bg-center">
     
     <!-- Navbar here -->
     <nav>
@@ -59,7 +59,7 @@
                         </a>
                         <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-48">
                             <a href="about_us.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About us</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+                            <a href="contact.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
                         </div>
                     </div>
 
