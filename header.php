@@ -12,10 +12,10 @@
         }
     </style>
 </head>
-<body>
+<body class="h-screen bg-[url('images/background2.avif')] bg-cover bg-center">
     
     <!-- Navbar here -->
-    <nav class="bg-gray-100 shadow-md">
+    <nav>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex">
@@ -63,8 +63,6 @@
                         </div>
                     </div>
                     
-                    <!-- Disabled Link -->
-                    <!-- <a href="#" class="text-gray-400 px-3 py-2 rounded-md text-sm font-medium cursor-not-allowed">Disabled</a> -->
                 </div>
             </div>
         </div>

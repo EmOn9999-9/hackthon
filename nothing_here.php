@@ -6,13 +6,13 @@
     <title>Profile Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
+<body class="h-screen bg-[url('images/background2.avif')] bg-cover bg-center">
     <!-- Profile Section -->
     <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
         <!-- Name and ID -->
         <div class="text-center">
-            <h1 class="text-3xl font-bold">Name Here</h1>
-            <p class="text-gray-600">ID: id name here</p>
+            <h1 class="text-3xl font-bold">Name here</h1>
+            <p class="text-gray-600">ID name here</p>
         </div>
 
         <!-- Bio Section -->
