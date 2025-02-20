@@ -49,8 +49,8 @@
                             </svg>
                             <div>
                                 <p class="text-gray-700 font-medium">Address</p>
-                                <p class="text-gray-600">123 HomeFix Street, Suite 456</p>
-                                <p class="text-gray-600">City, State, ZIP Code</p>
+                                <p class="text-gray-600">123 Street, Suite 456</p>
+                                <p class="text-gray-600">Gaindakot, Nepal, 33003</p>
                             </div>
                         </div>
                         <!-- Phone -->
@@ -60,7 +60,7 @@
                             </svg>
                             <div>
                                 <p class="text-gray-700 font-medium">Phone</p>
-                                <p class="text-gray-600">+1 (123) 456-7890</p>
+                                <p class="text-gray-600">+977 9812345678</p>
                             </div>
                         </div>
                         <!-- Email -->
@@ -70,18 +70,13 @@
                             </svg>
                             <div>
                                 <p class="text-gray-700 font-medium">Email</p>
-                                <p class="text-gray-600">support@homefix.com</p>
+                                <p class="text-gray-600">support@fixit.com</p>
                             </div>
                         </div>
                     </div>
                     <!-- Map -->
                     <div class="mt-8">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093747!2d144.9537353153166!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d0f5c9f5c6c1!2s123%20HomeFix%20Street%2C%20City%2C%20State%2C%20ZIP%20Code!5e0!3m2!1sen!2sus!4v1622549400000!5m2!1sen!2sus"
-                            class="w-full h-64 rounded-lg shadow-lg"
-                            allowfullscreen=""
-                            loading="lazy">
-                        </iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2846.9022794345765!2d84.40425523625872!3d27.705368013255445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fb6fdfd935ed%3A0x29e6424f203a7aec!2sLUMBINI%20ICT%20CAMPUS!5e0!3m2!1sen!2snp!4v1740070669807!5m2!1sen!2snp" class="w-full h-64 rounded-lg shadow-lg" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
