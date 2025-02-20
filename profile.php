@@ -3,25 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Profile Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex items-center justify-center h-screen w-full">
-    <div class="flex items-center justify-between w-full h-full max-w-6xl p-20 bg-white ">
-        <!-- Profile Section -->
-        <div class="flex flex-col items-center w-1/3">
-            <div class="w-60 h-60 bg-gray-400 rounded-full"></div>
-            <h2 class="mt-6 text-3xl font-semibold">Name here</h2>
-            <p class="text-xl text-gray-600">id name here</p>
+<body class="h-screen bg-[url('images/background2.avif')] bg-cover bg-center">
+    <!-- Profile Section -->
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+        <!-- Name and ID -->
+        <div class="text-center">
+            <h1 class="text-3xl font-bold">Name here</h1>
+            <p class="text-gray-600">ID name here</p>
         </div>
-        
-        <!-- Bio and Ratings Section -->
-        <div class="w-2/3">
-            <h3 class="text-xl text-gray-500">bio</h3>
-            <h1 class="text-6xl font-bold">about here</h1>
-            
-            <h3 class="mt-12 text-xl text-gray-500">ratings</h3>
-            <h2 class="text-5xl font-bold">ratings here</h2>
+
+        <!-- Bio Section -->
+        <div class="mt-8">
+            <h2 class="text-xl font-semibold">Bio</h2>
+            <p class="text-gray-700 mt-2">
+                about here
+            </p>
+        </div>
+
+        <!-- Ratings Section -->
+        <div class="mt-8">
+            <h2 class="text-xl font-semibold">Ratings</h2>
+            <div class="flex items-center mt-2">
+                <span class="text-yellow-400 text-2xl">★★★★☆</span>
+                <span class="text-gray-600 ml-2">4.2/5.0</span>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="mt-8">
+            <h2 class="text-xl font-semibold">Reviews</h2>
+            <div class="space-y-4 mt-4">
+                <!-- Review 1 -->
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="flex items-center">
+                        <img src="https://via.placeholder.com/40" alt="Reviewer" class="w-8 h-8 rounded-full">
+                        <div class="ml-3">
+                            <p class="font-semibold">Jane Smith</p>
+                            <p class="text-sm text-gray-600">2 days ago</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mt-2">
+                        John is an amazing professional! He delivered the project on time and exceeded my expectations.
+                    </p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="flex items-center">
+                        <img src="https://via.placeholder.com/40" alt="Reviewer" class="w-8 h-8 rounded-full">
+                        <div class="ml-3">
+                            <p class="font-semibold">Mike Johnson</p>
+                            <p class="text-sm text-gray-600">1 week ago</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mt-2">
+                        Great work! John is very responsive and detail-oriented. Highly recommended!
+                    </p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="flex items-center">
+                        <img src="https://via.placeholder.com/40" alt="Reviewer" class="w-8 h-8 rounded-full">
+                        <div class="ml-3">
+                            <p class="font-semibold">Emily Davis</p>
+                            <p class="text-sm text-gray-600">2 weeks ago</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mt-2">
+                        John is a true expert in his field. I will definitely work with him again in the future.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </body>

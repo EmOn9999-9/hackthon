@@ -6,8 +6,15 @@
     <title>Nexus</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="h-screen flex">
-    <!-- Left side with pattern -->
+<body class="h-screen flex bg-[url('images/background2.avif')] bg-cover bg-center">
+
+    <!-- Left side login form
+    <div class="hidden md:block w-1/2 bg-gray-900 h-full relative overflow-hidden">
+        <img src="" alt="" class=" h-full mt-5">
+    </div> -->
+
+
+    <!-- Right side with pattern -->
     <div class="w-full md:w-1/2 flex items-center justify-center p-6">
         <div class="max-w-md w-full space-y-6">
             <h1 class="text-3xl font-bold text-gray-900 flex items-center space-x-2">
@@ -45,11 +52,6 @@
             </button>
             
         </div>
-    </div>
-    
-    <!-- Right side login form -->
-    <div class="hidden md:block w-1/2 bg-gray-900 h-full relative overflow-hidden">
-        <img src="https://as1.ftcdn.net/v2/jpg/04/13/24/78/1000_F_413247834_RVsMB3VgSMb7UyzRzBhU5Uooow1jd0iv.jpg" alt="" class=" h-full mt-5">
     </div>
 
 </body>

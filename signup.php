@@ -6,7 +6,7 @@
     <title>Nexus - Sign Up</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="h-screen flex">
+<body class="h-screen flex bg-[url('images/background2.avif')] bg-cover bg-center">
     <!-- Left side with form -->
     <div class="w-full md:w-1/2 flex items-center justify-center p-6">
         <div class="max-w-md w-full space-y-6">
@@ -60,9 +60,9 @@
         </div>
     </div>
     
-    <!-- Right side with image -->
+    <!-- Right side with image
     <div class="hidden md:block w-1/2 bg-gray-900 h-full relative overflow-hidden">
         <img src="https://as1.ftcdn.net/v2/jpg/04/13/24/78/1000_F_413247834_RVsMB3VgSMb7UyzRzBhU5Uooow1jd0iv.jpg" alt="" class="h-full mt-5">
-    </div>
+    </div> -->
 </body>
 </html>
