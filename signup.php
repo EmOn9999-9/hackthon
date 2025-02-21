@@ -49,11 +49,7 @@
                 </div>
                 <!-- Error Message -->
                 <div id="errorMessage" class="text-red-500 text-sm hidden">Passwords do not match!</div>
-                <!-- Terms and Conditions -->
-                <div class="flex items-center text-sm">
-                    <input type="checkbox" class="mr-2" required>
-                    <span>I agree to the <a href="#" class="text-black hover:underline">terms and conditions</a></span>
-                </div>
+                
                 <!-- Sign Up Button -->
                 <button type="submit" class="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800">Sign Up</button>
             </form>
