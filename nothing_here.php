@@ -14,7 +14,7 @@
             transition: opacity 0.3s ease, transform 0.3s ease;
         }
 
-        .dropdown-menu.open {
+        .dropdown:hover .dropdown-menu {
             display: block;
             opacity: 1;
             transform: translateY(0);
@@ -83,12 +83,12 @@
                 <div class="hidden md:flex items-center space-x-4">
                     <!-- Services Dropdown -->
                     <div class="relative dropdown">
-                        <button class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium flex items-center focus:outline-none">
+                        <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium flex items-center">
                             Services
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
-                        </button>
+                        </a>
                         <div class="dropdown-menu absolute bg-white shadow-lg rounded-md mt-2 py-2 w-48">
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Electrician</a>
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Plumber</a>
@@ -98,12 +98,12 @@
 
                     <!-- More Dropdown -->
                     <div class="relative dropdown">
-                        <button class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium flex items-center focus:outline-none">
+                        <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium flex items-center">
                             More
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
-                        </button>
+                        </a>
                         <div class="dropdown-menu absolute bg-white shadow-lg rounded-md mt-2 py-2 w-48">
                             <a href="about_us.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About us</a>
                             <a href="contact.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
@@ -114,26 +114,50 @@
         </div>
     </nav>
 
-    <!-- JavaScript for Dropdown Toggle -->
+    <!-- JavaScript for Delayed Dropdown Closing -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const dropdowns = document.querySelectorAll('.dropdown');
 
             dropdowns.forEach(dropdown => {
-                const button = dropdown.querySelector('button');
                 const menu = dropdown.querySelector('.dropdown-menu');
+                let timeoutId;
 
-                // Toggle dropdown on button click
-                button.addEventListener('click', (e) => {
-                    e.stopPropagation(); // Prevent the click from bubbling up
-                    menu.classList.toggle('open');
+                // Show dropdown on hover
+                dropdown.addEventListener('mouseenter', () => {
+                    clearTimeout(timeoutId); // Clear any existing timeout
+                    menu.style.display = 'block';
+                    setTimeout(() => {
+                        menu.style.opacity = '1';
+                        menu.style.transform = 'translateY(0)';
+                    }, 10);
                 });
 
-                // Close dropdown when clicking outside
-                document.addEventListener('click', (e) => {
-                    if (!dropdown.contains(e.target)) {
-                        menu.classList.remove('open');
-                    }
+                // Hide dropdown after a delay when mouse leaves
+                dropdown.addEventListener('mouseleave', () => {
+                    timeoutId = setTimeout(() => {
+                        menu.style.opacity = '0';
+                        menu.style.transform = 'translateY(-10px)';
+                        setTimeout(() => {
+                            menu.style.display = 'none';
+                        }, 300); // Match the transition duration
+                    }, 500); // Delay before closing (500ms)
+                });
+
+                // Keep dropdown open if the mouse re-enters before the delay ends
+                menu.addEventListener('mouseenter', () => {
+                    clearTimeout(timeoutId); // Cancel the closing timeout
+                });
+
+                // Close dropdown when mouse leaves the menu
+                menu.addEventListener('mouseleave', () => {
+                    timeoutId = setTimeout(() => {
+                        menu.style.opacity = '0';
+                        menu.style.transform = 'translateY(-10px)';
+                        setTimeout(() => {
+                            menu.style.display = 'none';
+                        }, 300); // Match the transition duration
+                    }, 500); // Delay before closing (500ms)
                 });
             });
         });
