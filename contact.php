@@ -1,8 +1,9 @@
 <?php include 'header.php'; ?>
 
     <!-- Hero Section -->
-    <header class="bg-[url('images/contact-hero.jpg')] bg-cover bg-center h-[400px] flex items-center justify-center">
-        <div class="text-center">
+    <header class=" bg-cover bg-center h-[400px] flex items-center justify-center relative">
+        <div class="absolute inset-0 "></div>
+        <div class="text-center relative z-10 animate-fadeInUp">
             <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
             <p class="text-lg text-gray-200">We're here to help! Reach out to us for any inquiries or support.</p>
         </div>
@@ -60,7 +61,7 @@
                             </svg>
                             <div>
                                 <p class="text-gray-700 font-medium">Phone</p>
-                                <p class="text-gray-600">+977 9812345678</p>
+                                <p class="text-gray-600">+977 9818749730</p>
                             </div>
                         </div>
                         <!-- Email -->
