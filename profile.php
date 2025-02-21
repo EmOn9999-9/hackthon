@@ -1,9 +1,16 @@
 <?php include 'header.php'; ?>
 
     <!-- Profile Section -->
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10 mb-16"> <!-- Added mb-16 for margin-bottom -->
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10 mb-16">
+        <!-- Profile Photo -->
+        <div class="flex justify-center">
+            <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-gray-200">
+                <img src="https://via.placeholder.com/150" alt="Profile Photo" class="w-full h-full object-cover">
+            </div>
+        </div>
+
         <!-- Name and ID -->
-        <div class="text-center">
+        <div class="text-center mt-6">
             <h1 class="text-3xl font-bold">Name here</h1>
             <p class="text-gray-600">ID name here</p>
         </div>
