@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomeFix - Find Skilled Workers</title>
+    <title>Project</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* CSS for smooth dropdown */
+        .dropdown-menu {
+            display: none;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
         /* Custom animations */
         @keyframes fadeInUp {
             from {
@@ -43,131 +57,58 @@
         }
     </style>
 </head>
-<body class="bg-gray-100">
-    <!-- Navigation Bar -->
-    <nav class="bg-white shadow-lg fixed w-full z-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <!-- Logo -->
-                <div class="flex items-center">
-                    <span class="text-2xl font-bold text-gray-800">HomeFix</span>
+<body class="h-screen bg-[url('images/background.jpg')] bg-cover bg-center">
+    
+    <!-- Navbar here -->
+    <nav>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+
+                    <!-- Logo here -->
+                    <a href="home.php" class="flex-shrink-0 flex items-center text-lg font-semibold text-gray-700">
+                        <img src="images/Flixit.svg" alt="logo" class="h-20">
+                    </a>
+                    <!-- Hamburger Menu (Mobile) -->
+                    <button class="md:hidden ml-2 inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-900 focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
                 </div>
-                <!-- Navigation Links -->
-                <div class="hidden md:flex space-x-10">
-                    <a href="#" class="text-gray-800 hover:text-gray-600">Home</a>
-                    <a href="#services" class="text-gray-800 hover:text-gray-600">Services</a>
-                    <a href="#workers" class="text-gray-800 hover:text-gray-600">Workers</a>
-                    <a href="#testimonials" class="text-gray-800 hover:text-gray-600">Testimonials</a>
-                    <a href="#contact" class="text-gray-800 hover:text-gray-600">Contact</a>
-                </div>
-                <!-- Sign In Button -->
-                <div>
-                    <a href="signin.php" class="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800">Sign In</a>
+                
+
+                <!-- Navbar Menu -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="relative dropdown">
+                        <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                            Services
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu absolute bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Electrician</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Plumber</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Carpenter</a>
+                        </div>
+                    </div>
+
+                    <div class="relative dropdown">
+                        <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                            More
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu absolute bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                            <a href="about_us.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About us</a>
+                            <a href="contact.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
-
-    <!-- Hero Section -->
-    <header class="bg-[url('images/hero-bg.jpg')] bg-cover bg-center h-screen flex items-center justify-center relative">
-        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-        <div class="text-center relative z-10 animate-fadeInUp">
-            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Find Skilled Workers Near You</h1>
-            <p class="text-lg text-gray-200 mb-8">Carpenters, Plumbers, Electricians, and More</p>
-            <a href="#services" class="bg-black text-white px-8 py-4 rounded-lg hover:bg-gray-800 text-lg">Explore Services</a>
-        </div>
-    </header>
-
-    <!-- Services Section -->
-    <section id="services" class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 animate-fadeInUp">Our Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Carpenter -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn">
-                    <img src="images/carpenter.png" alt="Carpenter" class="w-20 h-20 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Carpenter</h3>
-                    <p class="text-gray-600">Skilled carpenters for furniture, repairs, and custom woodwork.</p>
-                </div>
-                <!-- Plumber -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn">
-                    <img src="images/plumber.png" alt="Plumber" class="w-20 h-20 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Plumber</h3>
-                    <p class="text-gray-600">Expert plumbers for leaks, installations, and maintenance.</p>
-                </div>
-                <!-- Electrician -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn">
-                    <img src="images/electrician.png" alt="Electrician" class="w-20 h-20 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Electrician</h3>
-                    <p class="text-gray-600">Certified electricians for wiring, repairs, and installations.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Workers Section -->
-    <section id="workers" class="py-16 bg-gray-100">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 animate-fadeInUp">Featured Workers</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Worker 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn">
-                    <img src="images/worker1.jpg" alt="Worker 1" class="w-32 h-32 rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">John Doe</h3>
-                    <p class="text-gray-600 mb-4">Carpenter</p>
-                    <p class="text-gray-600">⭐️⭐️⭐️⭐️⭐️ (4.9/5)</p>
-                </div>
-                <!-- Worker 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn">
-                    <img src="images/worker2.jpg" alt="Worker 2" class="w-32 h-32 rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Jane Smith</h3>
-                    <p class="text-gray-600 mb-4">Plumber</p>
-                    <p class="text-gray-600">⭐️⭐️⭐️⭐️⭐️ (5.0/5)</p>
-                </div>
-                <!-- Worker 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn">
-                    <img src="images/worker3.jpg" alt="Worker 3" class="w-32 h-32 rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Mike Johnson</h3>
-                    <p class="text-gray-600 mb-4">Electrician</p>
-                    <p class="text-gray-600">⭐️⭐️⭐️⭐️⭐️ (4.8/5)</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 animate-fadeInUp">What Our Clients Say</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover-scale animate-scaleIn">
-                    <p class="text-gray-600 mb-4">"HomeFix helped me find a great carpenter for my custom furniture. Highly recommended!"</p>
-                    <p class="font-semibold">- Sarah Lee</p>
-                </div>
-                <!-- Testimonial 2 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover-scale animate-scaleIn">
-                    <p class="text-gray-600 mb-4">"The plumber was professional and fixed my leaky faucet in no time. Great service!"</p>
-                    <p class="font-semibold">- David Brown</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action Section -->
-    <section id="contact" class="py-16 bg-black text-white text-center">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-4 animate-fadeInUp">Need a Skilled Worker?</h2>
-            <p class="text-gray-300 mb-8 animate-fadeInUp">Join thousands of satisfied customers and find the perfect professional for your needs.</p>
-            <a href="signup.php" class="bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-200 animate-scaleIn">Sign Up Today</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <p>&copy; 2023 HomeFix. All rights reserved.</p>
-        </div>
-    </footer>
 </body>
 </html>

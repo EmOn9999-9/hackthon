@@ -59,7 +59,7 @@
 
                     <!-- Logo here -->
                     <a href="home.php" class="flex-shrink-0 flex items-center text-lg font-semibold text-gray-700">
-                        <img src="images/Flixit.svg" alt="logo" class="h-20">
+                    <img src="images/Flixit.svg" alt="logo" class="h-20 sm:h-28 md:h-32 lg:h-36">
                     </a>
                     <!-- Hamburger Menu (Mobile) -->
                     <button class="md:hidden ml-2 inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-900 focus:outline-none">
