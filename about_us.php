@@ -37,22 +37,22 @@
             <h2 class="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Team Member 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <img src="images/team1.jpg" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn">
+                <img src="images/team1.jpg" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto mb-4">
                     <h3 class="text-xl font-semibold mb-2">Emon Devkota</h3>
                     <p class="text-gray-600 mb-4">Co-Founder & CEO</p>
                     <p class="text-gray-600">John is passionate about connecting people with the right professionals.</p>
                 </div>
                 <!-- Team Member 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <img src="images/team2.jpg" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn">
+                <img src="images/team2.jpg" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-4">
                     <h3 class="text-xl font-semibold mb-2">Samyog Acharya</h3>
                     <p class="text-gray-600 mb-4">Head of Operations</p>
                     <p class="text-gray-600">Jane ensures that every service provided meets our high standards.</p>
                 </div>
                 <!-- Team Member 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <img src="images/team3.jpg" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn">
+                <img src="images/team2.jpg" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-4">
                     <h3 class="text-xl font-semibold mb-2">Saksham Ghimire</h3>
                     <p class="text-gray-600 mb-4">Customer Success Manager</p>
                     <p class="text-gray-600">Mike is dedicated to making sure every customer is satisfied.</p>

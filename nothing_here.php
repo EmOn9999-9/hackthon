@@ -3,164 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Client Card</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* CSS for smooth dropdown */
-        .dropdown-menu {
-            display: none;
-            opacity: 0;
-            transform: translateY(-10px);
-            transition: opacity 0.3s ease, transform 0.3s ease;
-        }
-
-        .dropdown:hover .dropdown-menu {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Custom animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .animate-fadeInUp {
-            animation: fadeInUp 1s ease-out;
-        }
-
-        @keyframes scaleIn {
-            from {
-                transform: scale(0.9);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        .animate-scaleIn {
-            animation: scaleIn 0.8s ease-out;
-        }
-
-        .hover-scale:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease;
-        }
-    </style>
 </head>
-<body class="h-screen bg-[url('images/background.jpg')] bg-cover bg-center">
-    
-    <!-- Navbar here -->
-    <nav>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex">
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <!-- Client Card -->
+    <div class="bg-[#2cb5a0] w-52 p-6 border-4 border-[#7cdacc] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
+        <!-- User Picture -->
+        <div class="w-20 h-20 border-4 border-[#7cdacc] rounded-full overflow-hidden mx-auto flex items-center justify-center">
+            <svg viewBox="0 0 448 512" class="w-10 fill-current">
+                <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
+            </svg>
+        </div>
 
-                    <!-- Logo here -->
-                    <a href="home.php" class="flex-shrink-0 flex items-center text-lg font-semibold text-gray-700">
-                        <!-- Increased logo size from h-20 to h-28 -->
-                        <img src="images/Flixit.svg" alt="logo" class="h-28">
-                    </a>
-                    <!-- Hamburger Menu (Mobile) -->
-                    <button class="md:hidden ml-2 inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-900 focus:outline-none">
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-                
+        <!-- Client Name -->
+        <p class="mt-5 font-semibold text-lg">
+            Jhon Doe
+            <span class="block font-light text-base">CEO of WritBook</span>
+        </p>
 
-                <!-- Navbar Menu -->
-                <div class="hidden md:flex items-center space-x-4">
-                    <!-- Services Dropdown -->
-                    <div class="relative dropdown">
-                        <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                            Services
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </a>
-                        <div class="dropdown-menu absolute bg-white shadow-lg rounded-md mt-2 py-2 w-48">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Electrician</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Plumber</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Carpenter</a>
-                        </div>
-                    </div>
+        <!-- Social Media Icons -->
+        <div class="relative my-5">
+            <div class="w-full h-0.5 bg-[#7cdacc]"></div>
+            <div class="flex justify-center space-x-4 mt-5">
+                <!-- Twitter -->
+                <a href="#" class="relative group">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 fill-current">
+                        <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                    </svg>
+                    <span class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200">Twitter</span>
+                </a>
 
-                    <!-- More Dropdown -->
-                    <div class="relative dropdown">
-                        <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                            More
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </a>
-                        <div class="dropdown-menu absolute bg-white shadow-lg rounded-md mt-2 py-2 w-48">
-                            <a href="about_us.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About us</a>
-                            <a href="contact.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
-                        </div>
-                    </div>
-                </div>
+                <!-- Instagram -->
+                <a href="#" class="relative group">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 fill-current">
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                    </svg>
+                    <span class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200">Instagram</span>
+                </a>
+
+                <!-- Facebook -->
+                <a href="#" class="relative group">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 fill-current">
+                        <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                    </svg>
+                    <span class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200">Facebook</span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="#" class="relative group">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 fill-current">
+                        <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                    </svg>
+                    <span class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200">LinkedIn</span>
+                </a>
             </div>
         </div>
-    </nav>
-
-    <!-- JavaScript for Delayed Dropdown Closing -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const dropdowns = document.querySelectorAll('.dropdown');
-
-            dropdowns.forEach(dropdown => {
-                const menu = dropdown.querySelector('.dropdown-menu');
-                let timeoutId;
-
-                // Show dropdown on hover
-                dropdown.addEventListener('mouseenter', () => {
-                    clearTimeout(timeoutId); // Clear any existing timeout
-                    menu.style.display = 'block';
-                    setTimeout(() => {
-                        menu.style.opacity = '1';
-                        menu.style.transform = 'translateY(0)';
-                    }, 10);
-                });
-
-                // Hide dropdown after a delay when mouse leaves
-                dropdown.addEventListener('mouseleave', () => {
-                    timeoutId = setTimeout(() => {
-                        menu.style.opacity = '0';
-                        menu.style.transform = 'translateY(-10px)';
-                        setTimeout(() => {
-                            menu.style.display = 'none';
-                        }, 300); // Match the transition duration
-                    }, 500); // Delay before closing (500ms)
-                });
-
-                // Keep dropdown open if the mouse re-enters before the delay ends
-                menu.addEventListener('mouseenter', () => {
-                    clearTimeout(timeoutId); // Cancel the closing timeout
-                });
-
-                // Close dropdown when mouse leaves the menu
-                menu.addEventListener('mouseleave', () => {
-                    timeoutId = setTimeout(() => {
-                        menu.style.opacity = '0';
-                        menu.style.transform = 'translateY(-10px)';
-                        setTimeout(() => {
-                            menu.style.display = 'none';
-                        }, 300); // Match the transition duration
-                    }, 500); // Delay before closing (500ms)
-                });
-            });
-        });
-    </script>
+    </div>
+</body>
+</html>
 </body>
 </html>
