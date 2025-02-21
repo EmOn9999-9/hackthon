@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="h-screen bg-[url('images/background2.avif')] bg-cover bg-center">
+<?php include 'header.php'; ?>
+
     <!-- Profile Section -->
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10 mb-16"> <!-- Added mb-16 for margin-bottom -->
         <!-- Name and ID -->
         <div class="text-center">
             <h1 class="text-3xl font-bold">Name here</h1>
@@ -80,5 +73,5 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+
+<?php include 'footer.php'; ?>

@@ -32,7 +32,7 @@
     </section>
 
     <!-- Team Section -->
-    <section class="py-16 bg-gray-100 justify-center flex">
+    <section class="py-16 bg-gray-100 justify-center flex space-x-4">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
