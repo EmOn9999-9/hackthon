@@ -11,10 +11,10 @@
             display: none;
             opacity: 0;
             transform: translateY(-10px);
-            transition: opacity 1s ease, transform 1s ease;
+            transition: opacity 0.3s ease, transform 0.3s ease;
         }
 
-        .dropdown:hover .dropdown-menu {
+        .dropdown-menu.open {
             display: block;
             opacity: 1;
             transform: translateY(0);
@@ -67,7 +67,8 @@
 
                     <!-- Logo here -->
                     <a href="home.php" class="flex-shrink-0 flex items-center text-lg font-semibold text-gray-700">
-                        <img src="images/Flixit.svg" alt="logo" class="h-20">
+                        <!-- Increased logo size from h-20 to h-28 -->
+                        <img src="images/Flixit.svg" alt="logo" class="h-28">
                     </a>
                     <!-- Hamburger Menu (Mobile) -->
                     <button class="md:hidden ml-2 inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-900 focus:outline-none">
@@ -80,13 +81,14 @@
 
                 <!-- Navbar Menu -->
                 <div class="hidden md:flex items-center space-x-4">
+                    <!-- Services Dropdown -->
                     <div class="relative dropdown">
-                        <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                        <button class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium flex items-center focus:outline-none">
                             Services
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
-                        </a>
+                        </button>
                         <div class="dropdown-menu absolute bg-white shadow-lg rounded-md mt-2 py-2 w-48">
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Electrician</a>
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Plumber</a>
@@ -94,13 +96,14 @@
                         </div>
                     </div>
 
+                    <!-- More Dropdown -->
                     <div class="relative dropdown">
-                        <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                        <button class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium flex items-center focus:outline-none">
                             More
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
-                        </a>
+                        </button>
                         <div class="dropdown-menu absolute bg-white shadow-lg rounded-md mt-2 py-2 w-48">
                             <a href="about_us.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About us</a>
                             <a href="contact.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
@@ -110,5 +113,30 @@
             </div>
         </div>
     </nav>
+
+    <!-- JavaScript for Dropdown Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const dropdowns = document.querySelectorAll('.dropdown');
+
+            dropdowns.forEach(dropdown => {
+                const button = dropdown.querySelector('button');
+                const menu = dropdown.querySelector('.dropdown-menu');
+
+                // Toggle dropdown on button click
+                button.addEventListener('click', (e) => {
+                    e.stopPropagation(); // Prevent the click from bubbling up
+                    menu.classList.toggle('open');
+                });
+
+                // Close dropdown when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!dropdown.contains(e.target)) {
+                        menu.classList.remove('open');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
