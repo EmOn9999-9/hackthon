@@ -1,10 +1,11 @@
 <?php include 'header.php'; ?>
 
     <!-- Hero Section -->
-    <header class="bg-[url('images/about-hero.jpg')] bg-cover bg-center h-[400px] flex items-center justify-center">
-        <div class="text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">About Us</h1>
-            <p class="text-lg text-gray-200">Connecting you with skilled professionals for all your home needs.</p>
+    <header class=" bg-cover bg-center h-screen flex items-center justify-center relative">
+        <div class="absolute inset-0 "></div>
+        <div class="text-center relative z-10 animate-fadeInUp">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">About Us</h1>
+            <p class="text-lg text-gray-200 mb-8">Connecting you with skilled professionals for all your home needs.</p>
         </div>
     </header>
 
