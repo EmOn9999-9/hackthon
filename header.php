@@ -22,7 +22,7 @@
 
                     <!-- Logo here -->
                     <a href="home.php" class="flex-shrink-0 flex items-center text-lg font-semibold text-gray-700">
-                        <img src="Flixit@2x.png" alt="logo" class="h-12">
+                        <img src="plumber1.jpg" alt="logo" class="h-12">
                     </a>
                     <!-- Hamburger Menu (Mobile) -->
                     <button class="md:hidden ml-2 inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-900 focus:outline-none">
