@@ -34,7 +34,9 @@
                         </div>
                         <!-- Submit Button -->
                         <div>
-                            <button type="submit" class="w-full bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800">Send Message</button>
+                            <button class="w-[180px] h-[40px] bg-gradient-to-b from-[#d6cafe] to-[#9e81fe] border-none rounded-[50px] text-white font-semibold flex items-center justify-center gap-1.5 cursor-pointer shadow-[1px_3px_0px_#8b71ff] active:translate-x-[2px] active:translate-y-0 active:shadow-[0px_1px_0px_#8b71ff] active:pb-[1px] transition duration-300">
+                                Send Message
+                            </button>
                         </div>
                     </form>
                 </div>
