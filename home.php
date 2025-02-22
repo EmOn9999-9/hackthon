@@ -30,20 +30,17 @@
         <h2 class="text-3xl font-bold text-center mb-12 animate-fadeInUp">Our Services</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Carpenter -->
-            <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn">
-                <img src="images/carpenter.png" alt="Carpenter" class="w-20 h-20 mx-auto mb-4">
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn flex flex-col justify-center items-center h-full">
                 <h3 class="text-xl font-semibold mb-2">Carpenter</h3>
                 <p class="text-gray-600">Skilled carpenters for furniture, repairs, and custom woodwork.</p>
             </div>
             <!-- Plumber -->
-            <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn">
-                <img src="images/plumber.png" alt="Plumber" class="w-20 h-20 mx-auto mb-4">
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn flex flex-col justify-center items-center h-full">
                 <h3 class="text-xl font-semibold mb-2">Plumber</h3>
                 <p class="text-gray-600">Expert plumbers for leaks, installations, and maintenance.</p>
             </div>
             <!-- Electrician -->
-            <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn">
-                <img src="images/electrician.png" alt="Electrician" class="w-20 h-20 mx-auto mb-4">
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn flex flex-col justify-center items-center h-full">
                 <h3 class="text-xl font-semibold mb-2">Electrician</h3>
                 <p class="text-gray-600">Certified electricians for wiring, repairs, and installations.</p>
             </div>
