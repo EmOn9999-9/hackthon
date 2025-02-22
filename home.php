@@ -38,32 +38,73 @@
     </section>
 
     <!-- Featured Workers Section -->
-    <section id="workers" class="py-16 bg-gray-100">
+    <section id="workers" class="py-16 bg-gray-100 flex">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 animate-fadeInUp">Featured Workers</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Worker 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn">
-                    <img src="images/worker1.jpg" alt="Worker 1" class="w-32 h-32 rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">John Doe</h3>
-                    <p class="text-gray-600 mb-4">Carpenter</p>
-                    <p class="text-gray-600">⭐️⭐️⭐️⭐️⭐️ (4.9/5)</p>
-                </div>
+                <div class="bg-[#2cb5a0] w-52 p-6 border-4 border-[#7cdacc] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
+        <!-- User Picture -->
+        <div class="w-20 h-20 border-4 border-[#7cdacc] rounded-full overflow-hidden mx-auto flex items-center justify-center">
+            <svg viewBox="0 0 448 512" class="w-10 fill-current">
+                <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
+            </svg>
+        </div>
+
+        <!-- Client Name -->
+        <p class="mt-5 font-semibold text-lg">
+            Jhon Doe
+            <span class="block font-light text-base">CEO of WritBook</span>
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="relative my-5">
+            <div class="w-full h-0.5 bg-[#7cdacc]"></div>
+            <p class="text-gray-600">⭐️⭐️⭐️⭐️⭐️ (5.0/5)</p>
+        </div>
+    </div>
                 <!-- Worker 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn">
-                    <img src="images/worker2.jpg" alt="Worker 2" class="w-32 h-32 rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Jane Smith</h3>
-                    <p class="text-gray-600 mb-4">Plumber</p>
-                    <p class="text-gray-600">⭐️⭐️⭐️⭐️⭐️ (5.0/5)</p>
-                </div>
+                <div class="bg-[#2cb5a0] w-52 p-6 border-4 border-[#7cdacc] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
+        <!-- User Picture -->
+        <div class="w-20 h-20 border-4 border-[#7cdacc] rounded-full overflow-hidden mx-auto flex items-center justify-center">
+            <svg viewBox="0 0 448 512" class="w-10 fill-current">
+                <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
+            </svg>
+        </div>
+
+        <!-- Client Name -->
+        <p class="mt-5 font-semibold text-lg">
+            Jhon Doe
+            <span class="block font-light text-base">CEO of WritBook</span>
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="relative my-5">
+            <div class="w-full h-0.5 bg-[#7cdacc]"></div>
+            <p class="text-gray-600">⭐️⭐️⭐️⭐️⭐️ (5.0/5)</p>
+        </div>
+    </div>
                 <!-- Worker 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center hover-scale animate-scaleIn">
-                    <img src="images/worker3.jpg" alt="Worker 3" class="w-32 h-32 rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Mike Johnson</h3>
-                    <p class="text-gray-600 mb-4">Electrician</p>
-                    <p class="text-gray-600">⭐️⭐️⭐️⭐️⭐️ (4.8/5)</p>
-                </div>
-            </div>
+                <div class="bg-[#2cb5a0] w-52 p-6 border-4 border-[#7cdacc] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
+        <!-- User Picture -->
+        <div class="w-20 h-20 border-4 border-[#7cdacc] rounded-full overflow-hidden mx-auto flex items-center justify-center">
+            <svg viewBox="0 0 448 512" class="w-10 fill-current">
+                <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
+            </svg>
+        </div>
+
+        <!-- Client Name -->
+        <p class="mt-5 font-semibold text-lg">
+            Jhon Doe
+            <span class="block font-light text-base">CEO of WritBook</span>
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="relative my-5">
+            <div class="w-full h-0.5 bg-[#7cdacc]"></div>
+            <p class="text-gray-600">⭐️⭐️⭐️⭐️⭐️ (5.0/5)</p>
+        </div>
+    </div>
         </div>
     </section>
 
