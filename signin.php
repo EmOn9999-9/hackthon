@@ -42,7 +42,7 @@
                     </label>
                     <a href="#" class="text-gray-600 hover:underline">Reset password</a>
                 </div>
-                <button class="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800">Sign in</button>
+                <button type="submit" class="w-full font-bold bg-gradient-to-r from-[#1089d3] to-[#12b1d1] text-white py-3 rounded-[20px] mt-5 shadow-[0_20px_10px_-15px_rgba(133,189,215,0.88)] hover:scale-105 hover:shadow-[0_23px_10px_-20px_rgba(133,189,215,0.88)] active:scale-95 active:shadow-[0_15px_10px_-10px_rgba(133,189,215,0.88)] transition-all duration-200 ease-in-out">Sign In</button>
             </form>
             
             <p class="text-center text-sm">Don't have an account? <a href="signup.php" class="text-black font-medium hover:underline">Sign up</a></p>
