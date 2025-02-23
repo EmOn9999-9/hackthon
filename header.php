@@ -63,20 +63,21 @@
             left: 0;
             right: 0;
             z-index: 1000; /* Ensure it stays above other content */
-            background-color: white; /* Add a background color */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
         }
 
-        /* Add padding to the body to account for the fixed navbar */
         body {
             padding-top: 64px; /* Adjust this value based on your navbar height */
+        }
+
+        h1{
+            font-family: urbanist;
         }
     </style>
 </head>
 <body class="h-screen bg-[url('images/background.jpg')] bg-cover bg-center">
    
     <!-- Navbar here -->
-    <nav class="bg-blue-200 bg-opacity-0 shadow-none">
+    <nav>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex">
@@ -103,7 +104,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </a>
-                        <div class="dropdown-menu absolute bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                        <div class="dropdown-menu absolute bg-white bg-opacity-30 shadow-lg rounded-md mt-2 py-2 w-48">
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Electrician</a>
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Plumber</a>
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Carpenter</a>
@@ -118,7 +119,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </a>
-                        <div class="dropdown-menu absolute bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                        <div class="dropdown-menu absolute bg-white bg-opacity-30 shadow-lg rounded-md mt-2 py-2 w-48">
                             <a href="about_us.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About us</a>
                             <a href="contact.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
                         </div>
