@@ -75,9 +75,9 @@
         <h2 class="text-3xl font-bold text-center mb-12 animate-fadeInUp">Featured Workers</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Worker 1 -->
-            <div class="bg-[#2cb5a0] p-6 border-4 border-[#7cdacc] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
+            <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <!-- User Picture -->
-                <div class="w-20 h-20 border-4 border-[#7cdacc] rounded-full overflow-hidden mx-auto flex items-center justify-center">
+                <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
                         <img src="images/carpenter1.avif" alt="">
                     </svg>
@@ -89,14 +89,14 @@
                 </p>
                 <!-- Rating -->
                 <div class="relative my-5">
-                    <div class="w-full h-0.5 bg-[#7cdacc]"></div>
+                    <div class="w-full h-0.5 bg-[#EEEEEE]"></div>
                     <p class="text-gray-600">⭐️⭐️⭐️⭐️⭐️ (5.0/5)</p>
                 </div>
             </div>
             <!-- Worker 2 -->
-            <div class="bg-[#2cb5a0] p-6 border-4 border-[#7cdacc] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
+            <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <!-- User Picture -->
-                <div class="w-20 h-20 border-4 border-[#7cdacc] rounded-full overflow-hidden mx-auto flex items-center justify-center">
+                <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
                         <img src="images/plumber1.jpg" alt="">
                     </svg>
@@ -108,14 +108,14 @@
                 </p>
                 <!-- Rating -->
                 <div class="relative my-5">
-                    <div class="w-full h-0.5 bg-[#7cdacc]"></div>
+                    <div class="w-full h-0.5 bg-[#EEEEEE]"></div>
                     <p class="text-gray-600">⭐️⭐️⭐️⭐️⭐️ (5.0/5)</p>
                 </div>
             </div>
             <!-- Worker 3 -->
-            <div class="bg-[#2cb5a0] p-6 border-4 border-[#7cdacc] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
+            <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <!-- User Picture -->
-                <div class="w-20 h-20 border-4 border-[#7cdacc] rounded-full overflow-hidden mx-auto flex items-center justify-center">
+                <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
                         <img src="images/electrician1.jpg" alt="">
                     </svg>
@@ -127,7 +127,7 @@
                 </p>
                 <!-- Rating -->
                 <div class="relative my-5">
-                    <div class="w-full h-0.5 bg-[#7cdacc]"></div>
+                    <div class="w-full h-0.5 bg-[#EEEEEE]"></div>
                     <p class="text-gray-600">⭐️⭐️⭐️⭐️⭐️ (5.0/5)</p>
                 </div>
             </div>
