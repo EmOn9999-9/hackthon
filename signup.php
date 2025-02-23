@@ -9,10 +9,10 @@
 <body class="h-screen flex bg-[url('images/background2.avif')] bg-cover bg-center">
     <!-- Left side with form -->
     <div class="w-full md:w-1/2 flex items-center justify-center p-6">
-        <div class="max-w-md w-full space-y-6">
-            <h1 class="text-3xl font-bold text-gray-900 flex items-center space-x-2">
-                <span class="text-black">Nexus</span>
-            </h1>
+        <div class="max-w-md w-full space-y-3">
+            <div class="flex justify-center">
+                <img src="images/logo2.png" alt="Logo" class="w-60 h-60">
+            </div>
             <p class="text-gray-500">Create your account</p>
             
             <!-- Sign Up Form -->
