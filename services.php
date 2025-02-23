@@ -71,34 +71,24 @@
                 </div>
 
                 <!-- Cleaner -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-                    <img src="images/cleaner.png" alt="Cleaner" class="w-20 h-20 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Cleaner</h3>
-                    <p class="text-gray-600">Professional cleaners for homes, offices, and more.</p>
-                </div>
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
                         <img src="" alt="">
                     </svg>
                 </div>
-                <h3 class="text-xl font-semibold mb-2">Painter</h3>
-                    <p class="text-gray-600">Experienced painters for walls, ceilings, and exteriors.</p>
+                <h3 class="text-xl font-semibold mb-2">Cleaner</h3>
+                    <p class="text-gray-600">Professional cleaners for homes, offices, and more.</p>
                 </div>
 
                 <!-- Gardener -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-                    <img src="images/gardener.png" alt="Gardener" class="w-20 h-20 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Gardener</h3>
-                    <p class="text-gray-600">Expert gardeners for landscaping and lawn care.</p>
-                </div>
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
                         <img src="" alt="">
                     </svg>
                 </div>
-                <h3 class="text-xl font-semibold mb-2">Painter</h3>
+                <h3 class="text-xl font-semibold mb-2">Gardener</h3>
                     <p class="text-gray-600">Expert gardeners for landscaping and lawn care..</p>
                 </div>
 
