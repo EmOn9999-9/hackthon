@@ -46,5 +46,38 @@
             <a href="#" class="text-[9px] text-[#0099ff]">Learn user licence agreement</a>
         </div>
     </div>
+
+    <div class="container">
+  <div class="glass-box">
+    This is a glass-like box!
+  </div>
+</div>
+
+<style>
+  /* Container with a background image for demonstration */
+.container {
+  background-image: url('https://via.placeholder.com/800x600');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glass-like box */
+.glass-box {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-radius: 15px; /* Rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+</style>
 </body>
 </html>

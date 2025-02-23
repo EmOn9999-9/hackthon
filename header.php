@@ -6,7 +6,6 @@
     <title>Project</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-
         .dropdown-menu {
             display: none;
             opacity: 0;
@@ -60,14 +59,27 @@
             top: 0;
             left: 0;
             right: 0;
-            z-index: 1000; /* Ensure it stays above other content */
+            z-index: 1000;
+            background: transparent; /* Initial transparent background */
+            transition: background 0.3s ease; /* Smooth transition for background */
+        }
+
+        nav.scrolled {
+            background-color: rgba(60, 139, 161, 0.17);
+            transition: opacity 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+            width: 80%;
+            left: 10%;
+            right: 10%;
         }
 
         body {
             padding-top: 64px; /* Adjust this value based on your navbar height */
         }
 
-        h1{
+        h1 {
             font-family: urbanist;
         }
     </style>
@@ -75,7 +87,7 @@
 <body class="h-screen bg-[url('images/background.jpg')] bg-cover bg-center">
    
     <!-- Navbar here -->
-    <nav>
+    <nav id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex">
@@ -127,7 +139,7 @@
         </div>
     </nav>
 
-    <!-- JavaScript for Delayed Dropdown Closing -->
+    <!-- JavaScript for Delayed Dropdown Closing and Scroll Effect -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const dropdowns = document.querySelectorAll('.dropdown');
@@ -172,6 +184,16 @@
                         }, 300); // Match the transition duration
                     }, 500); // Delay before closing (500ms)
                 });
+            });
+
+            // Scroll effect for navbar
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 40) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
             });
         });
     </script>
