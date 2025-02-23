@@ -18,7 +18,7 @@
     <div class="w-full md:w-1/2 flex items-center justify-center p-6">
         <div class="max-w-md w-full space-y-6">
             <h1 class="text-3xl font-bold text-gray-900 flex items-center space-x-2">
-                <span class="text-black">Nexus</span>
+                <img src="images/logo2.png" alt="">
             </h1>
             <p class="text-gray-500">Welcome back!</p>
             
