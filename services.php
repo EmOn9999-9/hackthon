@@ -1,8 +1,8 @@
 <?php include 'header.php'; ?>
 
     <!-- Hero Section -->
-    <header class=" bg-cover bg-center h-[400px] flex items-center justify-center relative">
-        <div class="absolute inset-0 "></div>
+    <header class="bg-cover bg-center h-[400px] flex items-center justify-center relative">
+        <div class="absolute inset-0"></div>
         <div class="text-center relative z-10 animate-fadeInUp">
             <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Our Services</h1>
             <p class="text-lg text-gray-200">Find the best professionals for your needs.</p>
@@ -13,7 +13,7 @@
     <section class="py-16 bg-white">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Explore Our Services</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <!-- Carpenter -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
                     <img src="images/carpenter.png" alt="Carpenter" class="w-20 h-20 mx-auto mb-4">
