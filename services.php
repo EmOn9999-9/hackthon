@@ -1,42 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - HomeFix</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100">
-    <!-- Header -->
-    <header class="bg-white shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <!-- Logo -->
-                <div class="flex items-center">
-                    <span class="text-2xl font-bold text-gray-800">HomeFix</span>
-                </div>
-                <!-- Navigation Links -->
-                <div class="hidden md:flex space-x-10">
-                    <a href="index.html" class="text-gray-800 hover:text-gray-600">Home</a>
-                    <a href="about.html" class="text-gray-800 hover:text-gray-600">About Us</a>
-                    <a href="services.html" class="text-gray-800 hover:text-gray-600">Services</a>
-                    <a href="contact.html" class="text-gray-800 hover:text-gray-600">Contact</a>
-                </div>
-                <!-- Sign In Button -->
-                <div>
-                    <a href="signin.php" class="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800">Sign In</a>
-                </div>
-            </div>
-        </div>
-    </header>
+<?php include 'header.php'; ?>
 
     <!-- Hero Section -->
-    <section class="bg-[url('images/services-hero.jpg')] bg-cover bg-center h-64 flex items-center justify-center">
-        <div class="text-center">
+    <header class=" bg-cover bg-center h-[400px] flex items-center justify-center relative">
+        <div class="absolute inset-0 "></div>
+        <div class="text-center relative z-10 animate-fadeInUp">
             <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Our Services</h1>
             <p class="text-lg text-gray-200">Find the best professionals for your needs.</p>
         </div>
-    </section>
+    </header>
 
     <!-- Services Section -->
     <section class="py-16 bg-white">
@@ -102,11 +73,4 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <p>&copy; 2023 HomeFix. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+<?php include 'footer.php'; ?>
