@@ -2,158 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - HomeFix</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .animate-fadeInUp {
-            animation: fadeInUp 1s ease-out;
-        }
-
-        @keyframes scaleIn {
-            from {
-                transform: scale(0.9);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        .animate-scaleIn {
-            animation: scaleIn 0.8s ease-out;
-        }
-
-        .hover-scale:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease;
-        }
-    </style>
+    <meta name="viewport" content="width=6555565, initial-scale=1.0">
+    <title>Document</title>
 </head>
-<body class="bg-gray-100">
-    <!-- Hero Section -->
-    <header class="h-screen bg-[url('images/background.jpg')] bg-cover bg-center flex items-center justify-center">
-        <div class="text-center animate-fadeInUp">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">About Us</h1>
-            <p class="text-lg text-gray-200">Connecting you with skilled professionals for all your home needs.</p>
-        </div>
-    </header>
+<body>
+<label class="cursor-pointer relative block text-[16px] mt-[1.75em]">
+  <input type="checkbox" class="hidden" />
+  <div class="w-[10.625em] h-[5.625em] bg-gradient-to-b from-[#2c4770] via-[#070e2b_35%] via-[#628cac_50%_70%] to-[#a6c5d4] bg-[length:100%_11.25em] bg-[-5.625em] rounded-full transition-all duration-400 relative">
+    <!-- Scenery -->
+    <div class="absolute inset-0 pointer-events-none overflow-hidden rounded-full">
+      <div class="absolute w-full h-[30%] bottom-0 bg-[#b18d71] z-10"></div>
+      <!-- Clouds -->
+      <div class="absolute w-[0.875em] h-[0.625em] rounded-full blur-[0.125em] right-[1.875em] top-[2.813em] bg-gradient-to-tr from-[#ffffffae] to-[#ffffffae] shadow-[0.313em_0.313em_#ffffffae,-0.625em_0_#fff,-0.938em_-0.125em_#fff] transition-all duration-400"></div>
+      <div class="absolute w-[0.875em] h-[0.375em] rounded-full bg-[#dfdedeae] blur-[0.125em] right-[4.375em] top-[0.625em] shadow-[-0.313em_-0.188em_#e0dfdfae,-0.625em_-0.188em_#bbbbbbae,-1em_0.063em_#cfcfcfae] transition-all duration-600"></div>
+      <div class="absolute w-[0.875em] h-[0.375em] rounded-full bg-[#ffffffae] blur-[0.125em] right-[0.938em] top-[1.25em] shadow-[0.438em_0.188em_#ffffffae,-0.625em_0.313em_#ffffffae] transition-all duration-800"></div>
+      <!-- Stars -->
+      <div class="absolute w-[0.063em] h-[0.063em] bg-white rounded-full shadow-[1.25em_0.938em,-1.25em_2.5em,0_1.25em,1.875em_0.625em,-3.125em_1.875em,1.25em_2.813em] left-[3.75em] transition-all duration-200"></div>
+      <div class="absolute w-[0.063em] h-[0.063em] bg-white rounded-full shadow-[0.625em_0,0_0.625em,-0.625em_-0.625em,0.625em_0.938em,-3.125em_1.25em,1.25em_-1.563em] left-[4.688em] transition-all duration-300"></div>
+      <div class="absolute w-[0.063em] h-[0.063em] bg-white rounded-full shadow-[-0.625em_-0.625em,-2.188em_1.25em,-2.188em_0,-3.75em_-0.625em,-3.125em_-0.625em,-2.5em_-0.313em,0.75em_-0.625em] left-[5.313em] transition-all duration-400"></div>
+      <div class="absolute w-[0.125em] h-[0.125em] bg-white rounded-full left-[1.875em] transition-all duration-500"></div>
+      <div class="absolute w-[0.125em] h-[0.125em] bg-white rounded-full left-[5em] transition-all duration-600"></div>
+      <div class="absolute w-[0.125em] h-[0.125em] bg-white rounded-full left-[2.5em] transition-all duration-700"></div>
+      <div class="absolute w-[0.125em] h-[0.125em] bg-white rounded-full left-[3.438em] transition-all duration-800"></div>
+    </div>
+    <!-- BB-8 -->
+    <div class="absolute flex flex-col items-center top-[calc((5.625em-4.375em)/2-1.688em+0.188em)] left-[calc((5.625em-4.375em)/2)] transition-all duration-400 z-10">
+      <div class="relative transition-all duration-400 origin-[1.25em_3.75em] z-10">
+        <div class="w-[2.5em] h-[1.688em] bg-gradient-to-b from-transparent via-dimgray to-transparent rounded-t-full relative overflow-hidden mb-[-0.188em]"></div>
+        <div class="absolute w-[0.563em] h-[0.563em] bg-radial-gradient(circle_at_0.25em_0.375em,red,transparent) bg-radial-gradient(circle_at_0.375em_0.188em,white,transparent) bg-gradient-to-br from-black via-dimgray to-black rounded-full top-[0.413em] left-1/2 transform -translate-x-1/2 shadow-[0_0_0_0.089em_lightgray,0.563em_0.281em_0_-0.148em,0.563em_0.281em_0_-0.1em_white,0.563em_0.281em_0_-0.063em] transition-all duration-400"></div>
+        <div class="absolute w-full h-[0.188em] bottom-[0.375em] left-0 bg-gradient-to-r from-[var(--accent)] via-transparent to-[var(--accent)] transition-all duration-400"></div>
+      </div>
+      <div class="w-[4.375em] h-[4.375em] bg-white rounded-full relative overflow-hidden transition-all duration-400 transform rotate-45 z-10"></div>
+    </div>
+    <!-- Shadow -->
+    <div class="absolute w-[4.375em] h-[20%] bg-[#3a271c] rounded-full shadow-[0.313em_0_3.125em_#3a271c] opacity-25 bottom-0 left-[calc((5.625em-4.375em)/2-0.938em)] transition-all duration-400 transform skew-x-[-70deg] z-10"></div>
+  </div>
+</label>
 
-    <!-- Mission Section -->
-    <section class="min-h-screen flex items-center justify-center bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <!-- Mission Image -->
-                <div>
-                    <img src="images/mission.jpg" alt="Our Mission" class="rounded-lg shadow-lg">
-                </div>
-                <!-- Mission Content -->
-                <div>
-                    <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
-                    <p class="text-gray-600 mb-4">
-                        At HomeFix, our mission is to simplify the process of finding skilled and reliable professionals for your home. Whether you need a carpenter, plumber, or electrician, we connect you with the best in the business.
-                    </p>
-                    <p class="text-gray-600">
-                        We believe in quality, transparency, and trust. Our platform ensures that every professional is vetted, experienced, and ready to deliver exceptional service.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="min-h-screen flex items-center justify-center bg-gray-100">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Team Member 1 -->
-                <div class="bg-[#2cb5a0] w-52 p-6 border-4 border-[#7cdacc] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
-                    <!-- User Picture -->
-                    <div class="w-20 h-20 border-4 border-[#7cdacc] rounded-full overflow-hidden mx-auto flex items-center justify-center">
-                        <svg viewBox="0 0 448 512" class="w-10 fill-current">
-                            <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
-                        </svg>
-                    </div>
-                    <!-- Client Name -->
-                    <p class="mt-5 font-semibold text-lg">
-                        Jhon Doe
-                        <span class="block font-light text-base">CEO of WritBook</span>
-                    </p>
-                    <!-- Social Media Icons -->
-                    <div class="relative my-5">
-                        <div class="w-full h-0.5 bg-[#7cdacc]"></div>
-                        <div class="flex justify-center space-x-4 mt-5">
-                            <!-- Twitter -->
-                            <a href="#" class="relative group">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 fill-current">
-                                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
-                                </svg>
-                                <span class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200">Twitter</span>
-                            </a>
-                            <!-- Instagram -->
-                            <a href="#" class="relative group">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 fill-current">
-                                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
-                                </svg>
-                                <span class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200">Instagram</span>
-                            </a>
-                            <!-- Facebook -->
-                            <a href="#" class="relative group">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 fill-current">
-                                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
-                                </svg>
-                                <span class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200">Facebook</span>
-                            </a>
-                            <!-- LinkedIn -->
-                            <a href="#" class="relative group">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 fill-current">
-                                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
-                                </svg>
-                                <span class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200">LinkedIn</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repeat for Team Member 2 and 3 -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Values Section -->
-    <section class="min-h-screen flex items-center justify-center bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Our Core Values</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Value 1 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
-                    <h3 class="text-xl font-semibold mb-4">Quality</h3>
-                    <p class="text-gray-600">We ensure that every professional on our platform delivers top-notch service.</p>
-                </div>
-                <!-- Value 2 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
-                    <h3 class="text-xl font-semibold mb-4">Transparency</h3>
-                    <p class="text-gray-600">No hidden fees or surprises. We believe in clear communication.</p>
-                </div>
-                <!-- Value 3 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
-                    <h3 class="text-xl font-semibold mb-4">Trust</h3>
-                    <p class="text-gray-600">Your safety and satisfaction are our top priorities.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<style>
+  .bb8-toggle__container {
+    background: linear-gradient(#2c4770, #070e2b 35%, #628cac 50% 70%, #a6c5d4);
+  }
+  .bb8__head {
+    background: linear-gradient(
+      transparent 0.063em,
+      dimgray 0.063em 0.313em,
+      transparent 0.313em 0.375em,
+      var(--accent) 0.375em 0.5em,
+      transparent 0.5em 1.313em,
+      silver 1.313em 1.438em,
+      transparent 1.438em
+    ),
+    linear-gradient(
+      45deg,
+      transparent 0.188em,
+      var(--bb8-bg) 0.188em 1.25em,
+      transparent 1.25em
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 0.188em,
+      var(--bb8-bg) 0.188em 1.25em,
+      transparent 1.25em
+    ),
+    linear-gradient(var(--bb8-bg) 1.25em, transparent 1.25em);
+  }
+  .bb8__head::before {
+    background: radial-gradient(
+      0.125em circle at 0.25em 0.375em,
+      red,
+      transparent
+    ),
+    radial-gradient(
+      0.063em circle at 0.375em 0.188em,
+      var(--bb8-bg) 50%,
+      transparent 100%
+    ),
+    linear-gradient(45deg, #000 0.188em, dimgray 0.313em 0.375em, #000 0.5em);
+  }
+  .bb8__head::after {
+    background: linear-gradient(
+      to right,
+      var(--accent) 0.125em,
+      transparent 0.125em 0.188em,
+      var(--accent) 0.188em 0.313em,
+      transparent 0.313em 0.375em,
+      var(--accent) 0.375em 0.938em,
+      transparent 0.938em 1em,
+      var(--accent) 1em 1.125em,
+      transparent 1.125em 1.875em,
+      var(--accent) 1.875em 2em,
+      transparent 2em 2.063em,
+      var(--accent) 2.063em 2.25em,
+      transparent 2.25em 2.313em,
+      var(--accent) 2.313em 2.375em,
+      transparent 2.375em 2.438em,
+      var(--accent) 2.438em
+    );
+  }
+</style>
 </body>
 </html>
