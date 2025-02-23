@@ -4,8 +4,8 @@
 <header class=" bg-cover bg-center h-screen flex items-center justify-center relative">
     <div class="absolute inset-0 "></div>
     <div class="text-center relative z-10 animate-fadeInUp">
-        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Find Skilled Workers Near You</h1>
-        <p class="text-lg text-gray-200 mb-8">Carpenters, Plumbers, Electricians, and More</p>
+        <h1 class="text-4xl md:text-6xl font-bold text-[#497D74] mb-6">Find Skilled Workers Near You</h1>
+        <p class="text-lg text-[#497D74] mb-8">Carpenters, Plumbers, Electricians, and More</p>
         <a href="#services">
             <button type="submit" class="flex justify-center gap-2 items-center mx-auto shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-emerald-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group">
                 Explore Services

@@ -6,12 +6,12 @@
     <title>Nexus - Sign Up</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="h-screen flex bg-[url('images/background2.avif')] bg-cover bg-center">
+<body class="h-screen flex bg-[url('images/backgroundimg.jpg')] bg-cover bg-center">
     <!-- Left side with form -->
     <div class="w-full md:w-1/2 flex items-center justify-center p-6">
         <div class="max-w-md w-full space-y-3">
             <div class="flex justify-center">
-                <img src="images/logo2.png" alt="Logo" class="w-60 h-60">
+                <img src="images/logo2.png" alt="Logo" class="w-60 h-30">
             </div>
             <p class="text-gray-500">Create your account</p>
             
