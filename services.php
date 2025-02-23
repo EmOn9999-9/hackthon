@@ -99,7 +99,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Painter</h3>
-                    <p class="text-gray-600">Experienced painters for walls, ceilings, and exteriors.</p>
+                    <p class="text-gray-600">Expert gardeners for landscaping and lawn care..</p>
                 </div>
 
                 <!-- Mechanic -->
