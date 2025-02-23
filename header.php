@@ -6,7 +6,7 @@
     <title>Project</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* CSS for smooth dropdown */
+
         .dropdown-menu {
             display: none;
             opacity: 0;
@@ -20,7 +20,6 @@
             transform: translateY(0);
         }
 
-        /* Custom animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -56,7 +55,6 @@
             transition: transform 0.3s ease;
         }
 
-        /* Make the navbar fixed */
         nav {
             position: fixed;
             top: 0;
