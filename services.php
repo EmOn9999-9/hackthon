@@ -14,38 +14,59 @@
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Explore Our Services</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
                 <!-- Carpenter -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-                    <img src="images/carpenter.png" alt="Carpenter" class="w-20 h-20 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Carpenter</h3>
+                <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
+                <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
+                    <svg viewBox="0 0 448 512" class="w-10 fill-current">
+                        <img src="images/carpenter1.avif" alt="">
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Carpenter</h3>
                     <p class="text-gray-600">Skilled carpenters for furniture, repairs, and custom woodwork.</p>
                 </div>
 
                 <!-- Plumber -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-                    <img src="images/plumber.png" alt="Plumber" class="w-20 h-20 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Plumber</h3>
+                <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
+                <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
+                    <svg viewBox="0 0 448 512" class="w-10 fill-current">
+                        <img src="images/plumber1.jpg" alt="">
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Plumber</h3>
                     <p class="text-gray-600">Expert plumbers for leaks, installations, and maintenance.</p>
                 </div>
 
                 <!-- Electrician -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-                    <img src="images/electrician.png" alt="Electrician" class="w-20 h-20 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Electrician</h3>
+                <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
+                <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
+                    <svg viewBox="0 0 448 512" class="w-10 fill-current">
+                        <img src="images/electrician1.jpg" alt="">
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Electrician</h3>
                     <p class="text-gray-600">Certified electricians for wiring, repairs, and installations.</p>
                 </div>
 
                 <!-- Barber -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-                    <img src="images/barber.png" alt="Barber" class="w-20 h-20 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Barber</h3>
+                <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
+                <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
+                    <svg viewBox="0 0 448 512" class="w-10 fill-current">
+                        <img src="" alt="">
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Barber</h3>
                     <p class="text-gray-600">Professional barbers for haircuts, shaves, and grooming.</p>
                 </div>
 
                 <!-- Painter -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-                    <img src="images/painter.png" alt="Painter" class="w-20 h-20 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Painter</h3>
+                <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
+                <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
+                    <svg viewBox="0 0 448 512" class="w-10 fill-current">
+                        <img src="" alt="">
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Painter</h3>
                     <p class="text-gray-600">Experienced painters for walls, ceilings, and exteriors.</p>
                 </div>
 
@@ -55,6 +76,15 @@
                     <h3 class="text-xl font-semibold mb-2">Cleaner</h3>
                     <p class="text-gray-600">Professional cleaners for homes, offices, and more.</p>
                 </div>
+                <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
+                <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
+                    <svg viewBox="0 0 448 512" class="w-10 fill-current">
+                        <img src="" alt="">
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Painter</h3>
+                    <p class="text-gray-600">Experienced painters for walls, ceilings, and exteriors.</p>
+                </div>
 
                 <!-- Gardener -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
@@ -62,11 +92,24 @@
                     <h3 class="text-xl font-semibold mb-2">Gardener</h3>
                     <p class="text-gray-600">Expert gardeners for landscaping and lawn care.</p>
                 </div>
+                <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
+                <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
+                    <svg viewBox="0 0 448 512" class="w-10 fill-current">
+                        <img src="" alt="">
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Painter</h3>
+                    <p class="text-gray-600">Experienced painters for walls, ceilings, and exteriors.</p>
+                </div>
 
                 <!-- Mechanic -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-                    <img src="images/mechanic.png" alt="Mechanic" class="w-20 h-20 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Mechanic</h3>
+                <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
+                <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
+                    <svg viewBox="0 0 448 512" class="w-10 fill-current">
+                        <img src="" alt="">
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Mechanic</h3>
                     <p class="text-gray-600">Skilled mechanics for vehicle repairs and maintenance.</p>
                 </div>
             </div>
