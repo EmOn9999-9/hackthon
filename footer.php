@@ -12,7 +12,7 @@
                     <h3 class="text-lg font-semibold">Quick Links</h3>
                     <ul class="space-y-2">
                         <li><a href="home.php" class="text-gray-400 hover:text-white">Home</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="services/services.php" class="text-gray-400 hover:text-white">Services</a></li>
                         <li><a href="about_us.php" class="text-gray-400 hover:text-white">About</a></li>
                         <li><a href="contact.php" class="text-gray-400 hover:text-white">Contact</a></li>
                     </ul>
