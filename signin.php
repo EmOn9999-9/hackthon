@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexus</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body class="h-screen flex bg-[url('images/backgroundimg.jpg')] bg-cover bg-center">
 
-    <!-- Left side login form
-    <div class="hidden md:block w-1/2 bg-gray-900 h-full relative overflow-hidden">
-        <img src="" alt="" class=" h-full mt-5">
-    </div> -->
-
-
-    <!-- Right side with pattern -->
+    <!-- Left side with pattern -->
     <div class="w-full md:w-1/2 flex items-center justify-center p-6">
         <div class="max-w-md w-full space-y-3">
             <div class="flex justify-center">
@@ -76,6 +74,15 @@
         </div>
     </div>
 
+    <!-- Left side login form -->
+    <div class="hidden md:block w-1/2 h-full relative overflow-hidden">
+        <div class="swiper swiper-wrapper h-full">
+            <div class="swiper-slide"><img class="h-full object-cover" src="images/plumber1.jpg"> </div>
+            <div class="swiper-slide"><img class="h-full object-cover" src="images/plumber2.jpg"></div>
+            <div class="swiper-slide"><img class="h-full object-cover" src="images/plumber3.jpg"></div>
+        </div>
+    </div>
+
     <script>
         function togglePasswordVisibility(fieldId) {
             const passwordField = document.getElementById(fieldId);
@@ -90,6 +97,33 @@
                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>`;
             }
         }
+
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+        });
     </script>
 
 </body>
