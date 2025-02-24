@@ -16,6 +16,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
                 <!-- Carpenter -->
+                <a href="">
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
@@ -25,8 +26,10 @@
                 <h3 class="text-xl font-semibold mb-2">Carpenter</h3>
                     <p class="text-gray-600">Skilled carpenters for furniture, repairs, and custom woodwork.</p>
                 </div>
+                </a>
 
                 <!-- Plumber -->
+                 <a href="">
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
@@ -36,8 +39,10 @@
                 <h3 class="text-xl font-semibold mb-2">Plumber</h3>
                     <p class="text-gray-600">Expert plumbers for leaks, installations, and maintenance.</p>
                 </div>
+                </a>
 
                 <!-- Electrician -->
+                 <a href="">
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
@@ -47,8 +52,10 @@
                 <h3 class="text-xl font-semibold mb-2">Electrician</h3>
                     <p class="text-gray-600">Certified electricians for wiring, repairs, and installations.</p>
                 </div>
+                </a>
 
                 <!-- Barber -->
+                 <a href="">
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
@@ -58,8 +65,10 @@
                 <h3 class="text-xl font-semibold mb-2">Barber</h3>
                     <p class="text-gray-600">Professional barbers for haircuts, shaves, and grooming.</p>
                 </div>
+                </a>
 
                 <!-- Painter -->
+                 <a href="">
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
@@ -69,8 +78,10 @@
                 <h3 class="text-xl font-semibold mb-2">Painter</h3>
                     <p class="text-gray-600">Experienced painters for walls, ceilings, and exteriors.</p>
                 </div>
+                </a>
 
                 <!-- Cleaner -->
+                 <a href="">
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
@@ -80,8 +91,10 @@
                 <h3 class="text-xl font-semibold mb-2">Cleaner</h3>
                     <p class="text-gray-600">Professional cleaners for homes, offices, and more.</p>
                 </div>
+                </a>
 
                 <!-- Gardener -->
+                 <a href="">
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
@@ -91,8 +104,10 @@
                 <h3 class="text-xl font-semibold mb-2">Gardener</h3>
                     <p class="text-gray-600">Expert gardeners for landscaping and lawn care..</p>
                 </div>
+                </a>
 
                 <!-- Mechanic -->
+                 <a href="">
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
@@ -102,6 +117,8 @@
                 <h3 class="text-xl font-semibold mb-2">Mechanic</h3>
                     <p class="text-gray-600">Skilled mechanics for vehicle repairs and maintenance.</p>
                 </div>
+                </a>
+                
             </div>
         </div>
     </section>
