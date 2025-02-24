@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <style>
         .dropdown-menu {
             display: none;
@@ -84,7 +85,7 @@
         }
     </style>
 </head>
-<body class="h-screen bg-[url('images/bg.jpg')] bg-cover bg-center">
+<body class="h-screen bg-[url('images/backgroundimg.jpg')] bg-cover bg-center">
    
     <!-- Navbar here -->
     <nav id="navbar">
@@ -204,4 +205,8 @@
                 }
             });
         });
+        const chat = document.getElementById("chatbot-chat");
+
     </script>
+
+    
