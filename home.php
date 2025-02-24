@@ -25,7 +25,8 @@
 </header>
 
 <!-- Services Section -->
-<section id="services" class="py-16 bg-white">
+ <div class="bg-transparent relative z-10 p-8">
+<section id="services" class="py-16">
     <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12 animate-fadeInUp">Our Services</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -68,6 +69,7 @@
         </div>
     </div>
 </section>
+</div>
 
 <!-- Featured Workers Section -->
 <section id="workers" class="py-16 bg-gray-100">

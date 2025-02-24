@@ -105,7 +105,7 @@
 
                 <!-- Navbar Menu -->
                 <div class="hidden md:flex items-center space-x-4 flex-grow justify-center">
-                    <a href="home.php">Home</a>
+                    <a href="home.php" class="text-gray-700 hover:text-gray-900">Home</a>
 
                     <!-- Services Dropdown -->
                     <div class="relative dropdown">
@@ -115,7 +115,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </a>
-                        <div class="dropdown-menu absolute bg-white bg-opacity-30 shadow-lg rounded-md mt-2 py-2 w-48">
+                        <div class="dropdown-menu absolute bg-white bg-opacity-50 shadow-lg rounded-md mt-2 py-2 w-48">
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Electrician</a>
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Plumber</a>
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Carpenter</a>
@@ -130,7 +130,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </a>
-                        <div class="dropdown-menu absolute bg-white bg-opacity-30 shadow-lg rounded-md mt-2 py-2 w-48">
+                        <div class="dropdown-menu absolute bg-white bg-opacity-50 shadow-lg rounded-md mt-2 py-2 w-48">
                             <a href="about_us.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About us</a>
                             <a href="contact.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
                         </div>
