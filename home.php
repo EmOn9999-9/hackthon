@@ -138,7 +138,7 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="py-16 bg-white">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 animate-fadeInUp">What Our Clients Say</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 animate-fadeInUp">Testimonials</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Testimonial 1 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md hover-scale animate-scaleIn">
