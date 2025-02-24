@@ -84,7 +84,7 @@
         }
     </style>
 </head>
-<body class="h-screen bg-[url('images/backgroundimg.jpg')] bg-cover bg-center">
+<body class="h-screen bg-[url('images/bg.jpg')] bg-cover bg-center">
    
     <!-- Navbar here -->
     <nav id="navbar">
