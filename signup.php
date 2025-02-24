@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FixIt</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body class="h-screen flex bg-[url('images/backgroundimg.jpg')] bg-cover bg-center">
     <!-- Left side with form -->
@@ -85,6 +87,17 @@
         </div>
     </div>
 
+    <!-- Right side with Swiper -->
+    <div class="hidden md:block w-1/2 h-full relative overflow-hidden">
+        <div class="swiper h-full">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="h-full w-full object-cover" src="images/plumber1.jpg"></div>
+                <div class="swiper-slide"><img class="h-full w-full object-cover" src="images/plumber2.jpg"></div>
+                <div class="swiper-slide"><img class="h-full w-full object-cover" src="images/plumber3.jpg"></div>
+            </div>
+        </div>
+    </div>
+
     <script>
         // Function to toggle password visibility
         function togglePasswordVisibility(fieldId) {
@@ -118,6 +131,16 @@
             
             // If passwords match, redirect to home.php
             window.location.href = 'home.php';
+        });
+
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
         });
     </script>
 </body>
