@@ -20,7 +20,7 @@
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
-                        <img src="images/carpenter1.avif" alt="">
+                        <img src="Services_img/carpenter.png" alt="">
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Carpenter</h3>
@@ -33,7 +33,7 @@
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
-                        <img src="images/plumber1.jpg" alt="">
+                        <img src="Services_img/plumber.png" alt="">
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Plumber</h3>
@@ -46,7 +46,7 @@
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
-                        <img src="images/electrician1.jpg" alt="">
+                        <img src="Services_img/electrician.png" alt="">
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Electrician</h3>
@@ -59,7 +59,7 @@
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
-                        <img src="" alt="">
+                        <img src="Services_img/barber.png" alt="">
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Barber</h3>
@@ -72,7 +72,7 @@
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
-                        <img src="" alt="">
+                        <img src="Services_img/painter.png" alt="">
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Painter</h3>
@@ -85,7 +85,7 @@
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
-                        <img src="" alt="">
+                        <img src="Services_img/cleaner.png" alt="">
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Cleaner</h3>
@@ -98,7 +98,7 @@
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
-                        <img src="" alt="">
+                        <img src="Services_img/gardener.png" alt="">
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Gardener</h3>
@@ -111,7 +111,7 @@
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
-                        <img src="" alt="">
+                        <img src="Services_img/Mechanic.png" alt="">
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Mechanic</h3>
