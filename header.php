@@ -60,14 +60,14 @@
             left: 0;
             right: 0;
             z-index: 1000;
-            background: transparent; /* Initial transparent background */
-            transition: background 0.3s ease; /* Smooth transition for background */
+            background: transparent;
+            transition: background 0.3s ease;
         }
 
         nav.scrolled {
             background-color: rgba(60, 139, 161, 0.17);
             transition: opacity 0.3s ease;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             border-radius: 20px;
             backdrop-filter: blur(5px);
             width: 80%;
@@ -76,7 +76,7 @@
         }
 
         body {
-            padding-top: 64px; /* Adjust this value based on your navbar height */
+            padding-top: 64px;
         }
 
         h1 {
@@ -105,8 +105,9 @@
 
                 <!-- Navbar Menu -->
                 <div class="hidden md:flex items-center space-x-4 flex-grow justify-center">
+                    <a href="home.php">Home</a>
+
                     <!-- Services Dropdown -->
-                     <a href="home.php">Home</a>
                     <div class="relative dropdown">
                         <a href="services.php" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium flex items-center">
                             Services
@@ -139,7 +140,7 @@
         </div>
     </nav>
 
-    <!-- JavaScript for Delayed Dropdown Closing and Scroll Effect -->
+    <!-- JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const dropdowns = document.querySelectorAll('.dropdown');
@@ -171,7 +172,7 @@
 
                 // Keep dropdown open if the mouse re-enters before the delay ends
                 menu.addEventListener('mouseenter', () => {
-                    clearTimeout(timeoutId); // Cancel the closing timeout
+                    clearTimeout(timeoutId);
                 });
 
                 // Close dropdown when mouse leaves the menu
