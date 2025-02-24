@@ -91,9 +91,9 @@
     <div class="hidden md:block w-1/2 h-full relative overflow-hidden">
         <div class="swiper h-full">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img class="h-full w-full object-cover" src="images/plumber1.jpg"></div>
-                <div class="swiper-slide"><img class="h-full w-full object-cover" src="images/plumber2.jpg"></div>
-                <div class="swiper-slide"><img class="h-full w-full object-cover" src="images/plumber3.jpg"></div>
+                <div class="swiper-slide"><img class="h-full w-full object-cover" src="images/nobg_plumber.png"></div>
+                <div class="swiper-slide"><img class="h-full w-full object-cover" src="images/nobg_carpenter.png"></div>
+                <div class="swiper-slide"><img class="h-full w-full object-cover" src="images/nobg_electrician.png"></div>
             </div>
         </div>
     </div>
