@@ -213,6 +213,24 @@
                   </div>
               </div>
 
+              <!-- Testimonial 5 -->
+              <div class="shadow-lg p-3 mr-8 lg:mr-0 relative rounded-md lg:mx-0 mx-5 btn-hover">
+                  <img class="h-80  w-[85%] object-cover rounded-lg absolute -top-8  -right-4  lg:mx-0"
+                      src="images/plumber1.jpg" alt="">
+                  <div class="text-[#525560] flex flex-col ">
+                      <i class="ri-facebook-circle-fill rounded-full bg-white p-1  text-xl"></i>
+                      <i class="ri-twitter-fill  rounded-full bg-white p-1  text-xl my-4"></i>
+                      <i class="ri-linkedin-box-fill  rounded-full bg-white p-1  text-xl"></i>
+                  </div>
+                  <div class="pl-16 md:pl-28 lg:pl-16 pt-36">
+                      <p class="text-2xl ">Sabina karki</p>
+                      <p class="text-lg">ceo</p>
+                      <p class="text-[#525560]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit
+                          error quis aliquam saepe
+                          totam vero rem? Quidem vitae ipsum itaque, magni mollitia, in nulla perspiciam?</p>
+                  </div>
+              </div>
+
             </div>
         </div>
     </section>
