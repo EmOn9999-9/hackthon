@@ -139,19 +139,82 @@
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
+        <div class="max-w-6xl mx-auto ">
             <h2 class="text-3xl font-bold text-center mb-12 animate-fadeInUp">Testimonials</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-y-14 gap-x-12">
                 <!-- Testimonial 1 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover-scale animate-scaleIn">
-                    <p class="text-gray-600 mb-4">"HomeFix helped me find a great carpenter for my custom furniture. Highly recommended!"</p>
-                    <p class="font-semibold">- Sarah Lee</p>
+                <div class="shadow-lg p-3 mr-8 lg:mr-0 relative rounded-md lg:mx-0 mx-5 btn-hover">
+                <img class="h-80  w-[85%] object-cover rounded-lg absolute -top-8  -right-4  lg:mx-0"
+                    src="images/plumber2.jpg" alt="">
+                <div class="text-[#525560] flex flex-col ">
+                    <i class="ri-facebook-circle-fill rounded-full bg-white p-1  text-xl"></i>
+                    <i class="ri-twitter-fill  rounded-full bg-white p-1  text-xl my-4"></i>
+                    <i class="ri-linkedin-box-fill  rounded-full bg-white p-1  text-xl"></i>
                 </div>
+                <div class="pl-16 md:pl-28 lg:pl-16 pt-36">
+                    <p class="text-2xl ">Sabina karki</p>
+                    <p class="text-lg">ceo</p>
+                    <p class="text-[#525560]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit
+                        error quis aliquam saepe
+                        totam vero rem? Quidem vitae ipsum itaque, magni mollitia, in nulla perspiciam?</p>
+                </div>
+            </div>
                 <!-- Testimonial 2 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover-scale animate-scaleIn">
-                    <p class="text-gray-600 mb-4">"The plumber was professional and fixed my leaky faucet in no time. Great service!"</p>
-                    <p class="font-semibold">- David Brown</p>
+                <div class="shadow-lg p-3 mr-8 lg:mr-0 relative rounded-md lg:mx-0 mx-5 btn-hover">
+                <img class="h-80  w-[85%] object-cover rounded-lg absolute -top-8  -right-4  lg:mx-0"
+                    src="images/plumber3.jpg" alt="">
+                <div class="text-[#525560] flex flex-col ">
+                    <i class="ri-facebook-circle-fill rounded-full bg-white p-1  text-xl"></i>
+                    <i class="ri-twitter-fill  rounded-full bg-white p-1  text-xl my-4"></i>
+                    <i class="ri-linkedin-box-fill  rounded-full bg-white p-1  text-xl"></i>
                 </div>
+                <div class="pl-16 md:pl-28 lg:pl-16 pt-36">
+                    <p class="text-2xl ">Sabina karki</p>
+                    <p class="text-lg">ceo</p>
+                    <p class="text-[#525560]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit
+                        error quis aliquam saepe
+                        totam vero rem? Quidem vitae ipsum itaque, magni mollitia, in nulla perspiciam?</p>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="shadow-lg p-3 mr-8 lg:mr-0 relative rounded-md lg:mx-0 mx-5 btn-hover">
+                <img class="h-80  w-[85%] object-cover rounded-lg absolute -top-8  -right-4  lg:mx-0"
+                    src="images/plumber1.jpg" alt="">
+                <div class="text-[#525560] flex flex-col ">
+                    <i class="ri-facebook-circle-fill rounded-full bg-white p-1  text-xl"></i>
+                    <i class="ri-twitter-fill  rounded-full bg-white p-1  text-xl my-4"></i>
+                    <i class="ri-linkedin-box-fill  rounded-full bg-white p-1  text-xl"></i>
+                </div>
+                <div class="pl-16 md:pl-28 lg:pl-16 pt-36">
+                    <p class="text-2xl ">Sabina karki</p>
+                    <p class="text-lg">ceo</p>
+                    <p class="text-[#525560]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit
+                        error quis aliquam saepe
+                        totam vero rem? Quidem vitae ipsum itaque, magni mollitia, in nulla perspiciam?</p>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="shadow-lg p-3 mr-8 lg:mr-0 relative rounded-md lg:mx-0 mx-5 btn-hover">
+                <img class="h-80  w-[85%] object-cover rounded-lg absolute -top-8  -right-4  lg:mx-0"
+                    src="images/plumber1.jpg" alt="">
+                <div class="text-[#525560] flex flex-col ">
+                    <i class="ri-facebook-circle-fill rounded-full bg-white p-1  text-xl"></i>
+                    <i class="ri-twitter-fill  rounded-full bg-white p-1  text-xl my-4"></i>
+                    <i class="ri-linkedin-box-fill  rounded-full bg-white p-1  text-xl"></i>
+                </div>
+                <div class="pl-16 md:pl-28 lg:pl-16 pt-36">
+                    <p class="text-2xl ">Sabina karki</p>
+                    <p class="text-lg">ceo</p>
+                    <p class="text-[#525560]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit
+                        error quis aliquam saepe
+                        totam vero rem? Quidem vitae ipsum itaque, magni mollitia, in nulla perspiciam?</p>
+                </div>
+            </div>
+
+                </div>
+            </div>
             </div>
         </div>
     </section>
