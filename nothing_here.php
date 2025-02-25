@@ -1,214 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chatbot</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <style>
-    /* Chatbot Styles */
-    #chatbot-container {
-      z-index: 999;
-      color: #2c2325;
-      position: fixed;
-      bottom: 5rem; /* Position above the open button */
-      right: 1rem; /* Position from the right edge */
-      width: 350px; /* Smaller width */
-      height: 500px; /* Smaller height */
-      display: none; /* Hidden by default */
-      flex-direction: column;
-      background-color: #2c2325;
-      border-radius: 1rem;
-      opacity: 0.8;
-      background-image: radial-gradient(#444cf7 0.5px, #2c2325 0.5px);
-      background-size: 10px 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+<?php include 'header.php'; ?>
 
-    #chatbot-interface {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-
-    #chatbot-header {
-      font-weight: 600;
-      border-top-left-radius: 1rem;
-      border-top-right-radius: 1rem;
-      background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-        radial-gradient(ellipse farthest-corner at left top, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
-      padding: 0.5rem 1.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    #chatbot-chat {
-      flex: 1;
-      padding: 1rem;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    .chatbot-messages {
-      padding: 0.5rem 1rem;
-      border-radius: 1rem;
-      max-width: 70%;
-    }
-
-    .chatbot-received-messages {
-      background: radial-gradient(ellipse farthest-corner at right bottom, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-        radial-gradient(ellipse farthest-corner at left top, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
-      filter: grayscale(0.3);
-      align-self: flex-start;
-    }
-
-    .chatbot-sent-messages {
-      background-color: #574449;
-      color: white;
-      align-self: flex-end;
-    }
-
-    #chatbot-footer {
-      padding: 1rem;
-      display: flex;
-      gap: 0.5rem;
-      align-items: center;
-      border-top: 1px solid #444cf7;
-    }
-
-    #chatbot-input {
-      flex: 1;
-      padding: 0.5rem;
-      background-color: #574449;
-      border: 1px solid #574449;
-      border-radius: 1rem;
-      color: white;
-    }
-
-    #chatbot-input:focus {
-      outline: none;
-      border: 1px solid #FDB931;
-      box-shadow: 0 0 5px #FDB931;
-    }
-
-    #chatbot-new-message-send-button {
-      cursor: pointer;
-      color: white;
-    }
-
-    #chatbot-open-container {
-      position: fixed;
-      bottom: 1rem;
-      right: 1rem;
-      background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-        radial-gradient(ellipse farthest-corner at left top, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
-      padding: 1rem;
-      border-radius: 50%;
-      width: 3.5rem;
-      height: 3.5rem;
-      text-align: center;
-      cursor: pointer;
-      z-index: 1000;
-    }
-
-    #chatbot-open-container i {
-      font-size: 1.5rem;
-      color: #2c2325;
-    }
-  </style>
-</head>
-<body>
-  <!-- Chatbot Container -->
-  <div id="chatbot-container">
-    <div id="chatbot-interface">
-      <!-- Chatbot Header -->
-      <div id="chatbot-header">
-        <p>Chat with Us</p>
-      </div>
-      <!-- Chatbot Chat Area -->
-      <div id="chatbot-chat">
-        <div class="chatbot-messages chatbot-received-messages">
-          <p>Hello! How can I help you today?</p>
+    <!-- Profile Section -->
+    <div class="max-w-4xl mx-auto p-6 bg-black bg-opacity-20 shadow-lg rounded-lg mt-10 mb-16">
+        <!-- Profile Photo -->
+        <div class="flex justify-center">
+            <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-gray-200">
+                <img src="images/plumber2.jpg" alt="Profile Photo" class="w-full h-full object-cover">
+            </div>
         </div>
-      </div>
-      <!-- Chatbot Footer (Input Area) -->
-      <div id="chatbot-footer">
-        <div id="chatbot-input-container">
-          <input type="text" id="chatbot-input" name="chatbot-input" placeholder="Type a message...">
+
+        <!-- Name and Rating -->
+        <div class="text-center mt-6">
+            <h1 class="text-3xl font-bold">Name here</h1>
+            <div class="flex items-center justify-center mt-2">
+                <span class="text-yellow-400 text-2xl">★★★★☆</span>
+                <span class="text-gray-600 ml-2">4.2/5.0</span>
+            </div>
         </div>
-        <div id="chatbot-new-message-send-button">
-          <i class="material-icons" id="send-icon">send</i>
+
+        <!-- Message Button -->
+        <div class="flex justify-center mt-6">
+            <button class="bg-[#497D74] text-white px-6 py-2 rounded-full hover:bg-[#3a645d] transition duration-300 transform hover:scale-105">
+                <i class="fas fa-envelope mr-2"></i> Message
+            </button>
         </div>
-      </div>
+
+        <!-- Contact Section -->
+        <div class="mt-8">
+            <h2 class="text-xl font-semibold">Contact Information</h2>
+            <div class="mt-4 space-y-2">
+                <p class="text-gray-700"><i class="fas fa-phone-alt mr-2"></i> Phone: <a href="tel:+1234567890" class="text-[#497D74] hover:underline">+123 456 7890</a></p>
+                <p class="text-gray-700"><i class="fas fa-envelope mr-2"></i> Email: <a href="mailto:example@example.com" class="text-[#497D74] hover:underline">example@example.com</a></p>
+            </div>
+        </div>
+
+        <!-- Bio Section -->
+        <div class="mt-8">
+            <h2 class="text-xl font-semibold">Bio</h2>
+            <p class="text-gray-700 mt-2">
+                about here
+            </p>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="mt-8">
+            <h2 class="text-xl font-semibold">Reviews</h2>
+            <div class="space-y-4 mt-4">
+                <!-- Review 1 -->
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="flex items-center">
+                        <img src="https://via.placeholder.com/40" alt="Reviewer" class="w-8 h-8 rounded-full">
+                        <div class="ml-3">
+                            <p class="font-semibold">Jane Smith</p>
+                            <p class="text-sm text-gray-600">2 days ago</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mt-2">
+                        John is an amazing professional! He delivered the project on time and exceeded my expectations.
+                    </p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="flex items-center">
+                        <img src="https://via.placeholder.com/40" alt="Reviewer" class="w-8 h-8 rounded-full">
+                        <div class="ml-3">
+                            <p class="font-semibold">Mike Johnson</p>
+                            <p class="text-sm text-gray-600">1 week ago</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mt-2">
+                        Great work! John is very responsive and detail-oriented. Highly recommended!
+                    </p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="flex items-center">
+                        <img src="https://via.placeholder.com/40" alt="Reviewer" class="w-8 h-8 rounded-full">
+                        <div class="ml-3">
+                            <p class="font-semibold">Emily Davis</p>
+                            <p class="text-sm text-gray-600">2 weeks ago</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mt-2">
+                        John is a true expert in his field. I will definitely work with him again in the future.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <!-- Chatbot Open/Close Button -->
-  <div id="chatbot-open-container">
-    <i class="material-icons" id="open-chat-button">chat</i>
-    <i class="material-icons" id="close-chat-button" style="display: none">close</i>
-  </div>
-
-  <!-- JavaScript for Chatbot -->
-  <script>
-    // Toggle Chatbot Visibility
-    const chatbotContainer = document.getElementById('chatbot-container');
-    const openChatButton = document.getElementById('open-chat-button');
-    const closeChatButton = document.getElementById('close-chat-button');
-
-    openChatButton.addEventListener('click', () => {
-      chatbotContainer.style.display = 'flex';
-      openChatButton.style.display = 'none';
-      closeChatButton.style.display = 'block';
-    });
-
-    closeChatButton.addEventListener('click', () => {
-      chatbotContainer.style.display = 'none';
-      openChatButton.style.display = 'block';
-      closeChatButton.style.display = 'none';
-    });
-
-    // Chatbot Message Handling
-    const chatInput = document.getElementById('chatbot-input');
-    const chatSendButton = document.getElementById('chatbot-new-message-send-button');
-    const chatMessages = document.getElementById('chatbot-chat');
-
-    chatSendButton.addEventListener('click', sendMessage);
-    chatInput.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter') sendMessage();
-    });
-
-    function sendMessage() {
-      const userMessage = chatInput.value.trim();
-      if (userMessage === '') return;
-
-      // Append User Message
-      const userMessageDiv = document.createElement('div');
-      userMessageDiv.className = 'chatbot-messages chatbot-sent-messages';
-      userMessageDiv.innerHTML = `<p>${userMessage}</p>`;
-      chatMessages.appendChild(userMessageDiv);
-
-      // Clear Input
-      chatInput.value = '';
-
-      // Scroll to Bottom
-      chatMessages.scrollTop = chatMessages.scrollHeight;
-
-      // Simulate Bot Response
-      setTimeout(() => {
-        const botMessageDiv = document.createElement('div');
-        botMessageDiv.className = 'chatbot-messages chatbot-received-messages';
-        botMessageDiv.innerHTML = `<p>This is a response from the bot.</p>`;
-        chatMessages.appendChild(botMessageDiv);
-
-        // Scroll to Bottom
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-      }, 1000);
-    }
-  </script>
-</body>
-</html>
+<?php include 'footer.php'; ?>
