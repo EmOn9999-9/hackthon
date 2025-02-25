@@ -142,92 +142,79 @@
         <div class="max-w-6xl mx-auto ">
             <h2 class="text-3xl font-bold text-center mb-12 animate-fadeInUp">Testimonials</h2>
             <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-y-14 gap-x-12">
-                <!-- Testimonial 1 -->
-                  <div class="shadow-lg p-3 mr-8 lg:mr-0 relative rounded-md lg:mx-0 mx-5 btn-hover">
-                    <img class="h-80  w-[85%] object-cover rounded-lg absolute -top-8  -right-4  lg:mx-0"
-                        src="images/plumber2.jpg" alt="">
-                    <div class="text-[#525560] flex flex-col ">
-                        <i class="ri-facebook-circle-fill rounded-full bg-white p-1  text-xl"></i>
-                        <i class="ri-twitter-fill  rounded-full bg-white p-1  text-xl my-4"></i>
-                        <i class="ri-linkedin-box-fill  rounded-full bg-white p-1  text-xl"></i>
-                    </div>
-                    <div class="pl-16 md:pl-28 lg:pl-16 pt-36">
-                        <p class="text-2xl ">Sabina karki</p>
-                        <p class="text-lg">ceo</p>
-                        <p class="text-[#525560]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit
-                            error quis aliquam saepe
-                            totam vero rem? Quidem vitae ipsum itaque, magni mollitia, in nulla perspiciam?</p>
-                    </div>
+
+              <!-- Testimonial 1 -->
+              <div class="shadow-lg p-3 mr-8 lg:mr-0 relative rounded-md lg:mx-0 mx-5 btn-hover" style="width: 300px;">
+                  <img class="h-48 w-[80%] object-cover rounded-lg absolute -top-6 -right-4 lg:mx-0" src="images/plumber1.jpg" alt="">
+                  <div class="text-[#525560] flex flex-col">
+                      <i class="ri-facebook-circle-fill rounded-full bg-white p-1 text-xl"></i>
+                      <i class="ri-twitter-fill rounded-full bg-white p-1 text-xl my-2"></i>
+                      <i class="ri-linkedin-box-fill rounded-full bg-white p-1 text-xl"></i>
                   </div>
-                <!-- Testimonial 2 -->
-                  <div class="shadow-lg p-3 mr-8 lg:mr-0 relative rounded-md lg:mx-0 mx-5 btn-hover">
-                    <img class="h-80  w-[85%] object-cover rounded-lg absolute -top-8  -right-4  lg:mx-0"
-                        src="images/plumber3.jpg" alt="">
-                    <div class="text-[#525560] flex flex-col ">
-                        <i class="ri-facebook-circle-fill rounded-full bg-white p-1  text-xl"></i>
-                        <i class="ri-twitter-fill  rounded-full bg-white p-1  text-xl my-4"></i>
-                        <i class="ri-linkedin-box-fill  rounded-full bg-white p-1  text-xl"></i>
-                    </div>
-                    <div class="pl-16 md:pl-28 lg:pl-16 pt-36">
-                        <p class="text-2xl ">Sabina karki</p>
-                        <p class="text-lg">ceo</p>
-                        <p class="text-[#525560]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit
-                            error quis aliquam saepe
-                            totam vero rem? Quidem vitae ipsum itaque, magni mollitia, in nulla perspiciam?</p>
-                    </div>
+                  <div class="pl-12 md:pl-20 lg:pl-12 pt-24">
+                      <p class="text-xl">Sabina Karki</p>
+                      <p class="text-md">CEO</p>
+                      <p class="text-[#525560] text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit error quis aliquam saepe totam vero rem?</p>
                   </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="shadow-lg p-3 mr-8 lg:mr-0 relative rounded-md lg:mx-0 mx-5 btn-hover" style="width: 300px;">
+                  <img class="h-48 w-[80%] object-cover rounded-lg absolute -top-6 -right-4 lg:mx-0" src="images/electrician1.jpg" alt="">
+                  <div class="text-[#525560] flex flex-col">
+                      <i class="ri-facebook-circle-fill rounded-full bg-white p-1 text-xl"></i>
+                      <i class="ri-twitter-fill rounded-full bg-white p-1 text-xl my-2"></i>
+                      <i class="ri-linkedin-box-fill rounded-full bg-white p-1 text-xl"></i>
+                  </div>
+                  <div class="pl-12 md:pl-20 lg:pl-12 pt-24">
+                      <p class="text-xl">Sabina Karki</p>
+                      <p class="text-md">CEO</p>
+                      <p class="text-[#525560] text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit error quis aliquam saepe totam vero rem?</p>
+                  </div>
+              </div>
 
               <!-- Testimonial 3 -->
-              <div class="shadow-lg p-3 mr-8 lg:mr-0 relative rounded-md lg:mx-0 mx-5 btn-hover">
-                  <img class="h-80  w-[85%] object-cover rounded-lg absolute -top-8  -right-4  lg:mx-0"
-                      src="images/plumber1.jpg" alt="">
-                  <div class="text-[#525560] flex flex-col ">
-                      <i class="ri-facebook-circle-fill rounded-full bg-white p-1  text-xl"></i>
-                      <i class="ri-twitter-fill  rounded-full bg-white p-1  text-xl my-4"></i>
-                      <i class="ri-linkedin-box-fill  rounded-full bg-white p-1  text-xl"></i>
+              <div class="shadow-lg p-3 mr-8 lg:mr-0 relative rounded-md lg:mx-0 mx-5 btn-hover" style="width: 300px;">
+                  <img class="h-48 w-[80%] object-cover rounded-lg absolute -top-6 -right-4 lg:mx-0" src="images/plumber2.jpg" alt="">
+                  <div class="text-[#525560] flex flex-col">
+                      <i class="ri-facebook-circle-fill rounded-full bg-white p-1 text-xl"></i>
+                      <i class="ri-twitter-fill rounded-full bg-white p-1 text-xl my-2"></i>
+                      <i class="ri-linkedin-box-fill rounded-full bg-white p-1 text-xl"></i>
                   </div>
-                  <div class="pl-16 md:pl-28 lg:pl-16 pt-36">
-                      <p class="text-2xl ">Sabina karki</p>
-                      <p class="text-lg">ceo</p>
-                      <p class="text-[#525560]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit
-                          error quis aliquam saepe
-                          totam vero rem? Quidem vitae ipsum itaque, magni mollitia, in nulla perspiciam?</p>
+                  <div class="pl-12 md:pl-20 lg:pl-12 pt-24">
+                      <p class="text-xl">Sabina Karki</p>
+                      <p class="text-md">CEO</p>
+                      <p class="text-[#525560] text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit error quis aliquam saepe totam vero rem?</p>
                   </div>
               </div>
 
               <!-- Testimonial 4 -->
-              <div class="shadow-lg p-3 mr-8 lg:mr-0 relative rounded-md lg:mx-0 mx-5 btn-hover">
-                  <img class="h-80  w-[85%] object-cover rounded-lg absolute -top-8  -right-4  lg:mx-0"
-                      src="images/plumber1.jpg" alt="">
-                  <div class="text-[#525560] flex flex-col ">
-                      <i class="ri-facebook-circle-fill rounded-full bg-white p-1  text-xl"></i>
-                      <i class="ri-twitter-fill  rounded-full bg-white p-1  text-xl my-4"></i>
-                      <i class="ri-linkedin-box-fill  rounded-full bg-white p-1  text-xl"></i>
+              <div class="shadow-lg p-3 mr-8 lg:mr-0 relative rounded-md lg:mx-0 mx-5 btn-hover" style="width: 300px;">
+                  <img class="h-48 w-[80%] object-cover rounded-lg absolute -top-6 -right-4 lg:mx-0" src="images/electrician2.jpg" alt="">
+                  <div class="text-[#525560] flex flex-col">
+                      <i class="ri-facebook-circle-fill rounded-full bg-white p-1 text-xl"></i>
+                      <i class="ri-twitter-fill rounded-full bg-white p-1 text-xl my-2"></i>
+                      <i class="ri-linkedin-box-fill rounded-full bg-white p-1 text-xl"></i>
                   </div>
-                  <div class="pl-16 md:pl-28 lg:pl-16 pt-36">
-                      <p class="text-2xl ">Sabina karki</p>
-                      <p class="text-lg">ceo</p>
-                      <p class="text-[#525560]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit
-                          error quis aliquam saepe
-                          totam vero rem? Quidem vitae ipsum itaque, magni mollitia, in nulla perspiciam?</p>
+                  <div class="pl-12 md:pl-20 lg:pl-12 pt-24">
+                      <p class="text-xl">Sabina Karki</p>
+                      <p class="text-md">CEO</p>
+                      <p class="text-[#525560] text-sm">"FixIt helped me find a great carpenter for my custom furniture. Highly recommended!"</p>
                   </div>
               </div>
 
               <!-- Testimonial 5 -->
-              <div class="shadow-lg p-3 mr-8 lg:mr-0 relative rounded-md lg:mx-0 mx-5 btn-hover">
-                  <img class="h-80  w-[85%] object-cover rounded-lg absolute -top-8  -right-4  lg:mx-0"
-                      src="images/plumber1.jpg" alt="">
-                  <div class="text-[#525560] flex flex-col ">
-                      <i class="ri-facebook-circle-fill rounded-full bg-white p-1  text-xl"></i>
-                      <i class="ri-twitter-fill  rounded-full bg-white p-1  text-xl my-4"></i>
-                      <i class="ri-linkedin-box-fill  rounded-full bg-white p-1  text-xl"></i>
+              <div class="shadow-lg p-3 mr-8 lg:mr-0 relative rounded-md lg:mx-0 mx-5 btn-hover" style="width: 300px;">
+                  <img class="h-48 w-[80%] object-cover rounded-lg absolute -top-6 -right-4 lg:mx-0" src="images/plumber3.jpg" alt="">
+                  <div class="text-[#525560] flex flex-col">
+                      <i class="ri-facebook-circle-fill rounded-full bg-white p-1 text-xl"></i>
+                      <i class="ri-twitter-fill rounded-full bg-white p-1 text-xl my-2"></i>
+                      <i class="ri-linkedin-box-fill rounded-full bg-white p-1 text-xl"></i>
                   </div>
-                  <div class="pl-16 md:pl-28 lg:pl-16 pt-36">
-                      <p class="text-2xl ">Sabina karki</p>
-                      <p class="text-lg">ceo</p>
-                      <p class="text-[#525560]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit
-                          error quis aliquam saepe
-                          totam vero rem? Quidem vitae ipsum itaque, magni mollitia, in nulla perspiciam?</p>
+                  <div class="pl-12 md:pl-20 lg:pl-12 pt-24">
+                      <p class="text-xl">Sabina Karki</p>
+                      <p class="text-md">CEO</p>
+                      <p class="text-[#525560] text-sm">"The plumber was professional and fixed my leaky faucet in no time. Great service!"</p>
                   </div>
               </div>
 
