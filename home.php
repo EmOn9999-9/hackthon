@@ -219,23 +219,22 @@
 
 
 <!-- chatbot section  -->
-<section>
-  <div id="chatbot-container" style="display: none">
+<div id="chatbot-container">
     <div id="chatbot-interface">
+      <!-- Chatbot Header -->
       <div id="chatbot-header">
-        <p>Want to know something? - Let's chat</p>
+        <p>Chat with Us</p>
       </div>
+      <!-- Chatbot Chat Area -->
       <div id="chatbot-chat">
         <div class="chatbot-messages chatbot-received-messages">
-          <p>With what can I help you today?</p>
-        </div>
-        <div class="chatbot-messages chatbot-received-messages">
-          <p>Hello! I am [name], [company]'s chatbot</p>
+          <p>Hello! How can I help you today?</p>
         </div>
       </div>
+      <!-- Chatbot Footer (Input Area) -->
       <div id="chatbot-footer">
         <div id="chatbot-input-container">
-          <input type="text" id="chatbot-input" name="chatbot-input" placeholder="Type a command here...">
+          <input type="text" id="chatbot-input" name="chatbot-input" placeholder="Type a message...">
         </div>
         <div id="chatbot-new-message-send-button">
           <i class="material-icons" id="send-icon">send</i>
@@ -244,112 +243,69 @@
     </div>
   </div>
 
+  <!-- Chatbot Open/Close Button -->
   <div id="chatbot-open-container">
     <i class="material-icons" id="open-chat-button">chat</i>
     <i class="material-icons" id="close-chat-button" style="display: none">close</i>
   </div>
-</section>
 
-<!-- javascript for chatbot -->
-<script>
-            var $messages = $('.messages-content'),
-    d, h, m, Fake, noFuck,
-    i = 0;
+    <!-- JavaScript for Chatbot -->
+    <script>
+    // Toggle Chatbot Visibility
+    const chatbotContainer = document.getElementById('chatbot-container');
+    const openChatButton = document.getElementById('open-chat-button');
+    const closeChatButton = document.getElementById('close-chat-button');
 
-$(window).load(function() {
-  $messages.mCustomScrollbar();
-  setTimeout(fakeMessage, 100);
-});
+    openChatButton.addEventListener('click', () => {
+      chatbotContainer.style.display = 'flex';
+      openChatButton.style.display = 'none';
+      closeChatButton.style.display = 'block';
+    });
 
-function updateScrollbar() {
-  $messages.mCustomScrollbar('update')
-    .mCustomScrollbar('scrollTo', 'bottom', {
-      scrollInertia: 10,
-      timeout: 0
-  });
-}
+    closeChatButton.addEventListener('click', () => {
+      chatbotContainer.style.display = 'none';
+      openChatButton.style.display = 'block';
+      closeChatButton.style.display = 'none';
+    });
 
-function setDate(){
-  d = new Date()
-  if (m != d.getMinutes()) {
-    m = d.getMinutes();
-    $('<div class="timestamp">'
-      + d.getHours() + ':' + m 
-    + '</div>').appendTo($('.message:last'));
-  }
-}
+    // Chatbot Message Handling
+    const chatInput = document.getElementById('chatbot-input');
+    const chatSendButton = document.getElementById('chatbot-new-message-send-button');
+    const chatMessages = document.getElementById('chatbot-chat');
 
-function insertMessage() {
-  msg = $('.message-input').val();
-  if ($.trim(msg) == '') {
-    return false;
-  }
-  $('<div class="message message-personal">'
-    + msg
-  + '</div>').appendTo($('.mCSB_container')).addClass('new');
-  setDate();
-  $('.message-input').val(null);
-  updateScrollbar();
-  setTimeout(function() {
-    fakeMessage();
-  }, 1000 + (Math.random() * 20) * 100);
-}
+    chatSendButton.addEventListener('click', sendMessage);
+    chatInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') sendMessage();
+    });
 
-$('.message-submit').click(insertMessage);
-$(window).on('keydown', function(e) {
-  if (e.which == 13) {
-    insertMessage();
-    return false;
-  }
-})
+    function sendMessage() {
+      const userMessage = chatInput.value.trim();
+      if (userMessage === '') return;
 
-Fake = ['Salut, je m\'appelle José et toi comment t\'appelles tu?', 'Enchanté!', 'Alors, comment vas-tu?', 'Moi, je vais bien :-)', 'Tu fais quoi en ce moment?', 'C\'est superbe, j\'espere. :-D Demande moi ce que je fais maintenant', 'Je suis entain de te parler LOL', 'Je pense que tu es une personne bien. Mais vraiment, j\'aimerai te rencontrer', 'Pourquoi tu dis ça?', 'J\'suis perdu là. Peux-tu expliquer?', 'Ok ! C\'est bon.', 'Je dois y aller maintenant', 'C\'était un plaisir de discuter avec toi', 'Je voudrais juste ajouté que j\'apprend à peine à parler, donc s\'il te plaît, ne me pas dire ce que je ne peux pas dire', 'Bon, Il est vraiment temps qu\'on se quitte', 'A plus !', ':-)'
-];
+      // Append User Message
+      const userMessageDiv = document.createElement('div');
+      userMessageDiv.className = 'chatbot-messages chatbot-sent-messages';
+      userMessageDiv.innerHTML = `<p>${userMessage}</p>`;
+      chatMessages.appendChild(userMessageDiv);
 
-noFuck = {
-  fuck : ['fils de pute', 'con', 'connard', 'idiot', 'ta mère', 'salope', 'trou du cul', 'jacouille', 'enculé', 'pute'
-  ],
-  ohFuck : ['Restons polis s\'il vous plaît', 'Pardon?', 'Surveillez votre langage!', 'Vous me sembler mal poli']
-};
+      // Clear Input
+      chatInput.value = '';
 
-function isInArray(value, array) {
-  return array.indexOf(value) > -1;
-}
-function myResponse() {
-  // Ohfuck doesn't work for the moment
-  var iValue = $('.message-input').val();
-  if (isInArray(iValue, noFuck.fuck)) {
-    return noFuck.ohFuck[Math.floor(Math.random() * noFuck.ohFuck.length)] + "<br/>" + Fake[i];
-  } else {
-    return Fake[i];
-  }
-};
+      // Scroll to Bottom
+      chatMessages.scrollTop = chatMessages.scrollHeight;
 
-function fakeMessage() {
-  if ($('.message-input').val() != '') {
-    return false;
-  }
-  $('<div class="message loading new">'
-    + '<figure class="avatar">'
-      + '<img src="https://3.bp.blogspot.com/-SkCpQ54YfbA/WB3aD_kQMiI/AAAAAAAAKlE/w-6wZTBhdXUbPl-ziauSgBoPqw72qFnygCK4B/s1600/media-20160723.jpg" />'
-    + '</figure>'
-    + '<span></span>'
-  + '</div>').appendTo($('.mCSB_container'), updateScrollbar);
-  
-  setTimeout(function() {
-    $('.message.loading').remove();
-    $('<div class="message new">'
-      + '<figure class="avatar">'
-        + '<img src="https://3.bp.blogspot.com/-SkCpQ54YfbA/WB3aD_kQMiI/AAAAAAAAKlE/w-6wZTBhdXUbPl-ziauSgBoPqw72qFnygCK4B/s1600/media-20160723.jpg"/>'
-      + '</figure>'
-      + myResponse()
-    + '</div>').appendTo($('.mCSB_container')).addClass('new');
-    setDate();
-    updateScrollbar();
-    i++;
-  }, 1000 + (Math.random() * 20) * 100); 
-};
-</script>
+      // Simulate Bot Response
+      setTimeout(() => {
+        const botMessageDiv = document.createElement('div');
+        botMessageDiv.className = 'chatbot-messages chatbot-received-messages';
+        botMessageDiv.innerHTML = `<p>This is a response from the bot.</p>`;
+        chatMessages.appendChild(botMessageDiv);
+
+        // Scroll to Bottom
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }, 1000);
+    }
+  </script>
 
 
 <?php include 'footer.php'; ?>

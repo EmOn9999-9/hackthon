@@ -7,9 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
-        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .dropdown-menu {
             display: none;
@@ -128,19 +125,7 @@
                     </div>
 
                     <!-- More Dropdown -->
-                    <div class="relative dropdown">
-                        <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                            More
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </a>
-                        <div class="dropdown-menu absolute bg-white bg-opacity-50 shadow-lg rounded-md mt-2 py-2 w-48">
-                            <a href="about_us.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About us</a>
-                            <a href="contact.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
-                        </div>
-                    </div>
-                </div>
+                    <a href="about_us.php" class="text-gray-700 hover:text-gray-900">About Us</a>
 
                 <!-- Button on the right side -->
                 <a href="contact.php"> 
