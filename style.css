@@ -187,3 +187,29 @@
     transition: ease-in-out 0.5s;
     color: rgb(5, 42, 9);
 }
+
+/* Ensure Chat Area Scrolls Properly */
+#chatbot-chat {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #8A6E2F #2c2325;
+}
+
+#chatbot-chat::-webkit-scrollbar {
+  width: 8px;
+}
+
+#chatbot-chat::-webkit-scrollbar-thumb {
+  background-color: #8A6E2F;
+  border-radius: 4px;
+}
+
+#chatbot-chat::-webkit-scrollbar-track {
+  background-color: #2c2325;
+}
+
+/* Improve Input Focus Visibility */
+#chatbot-input:focus {
+  border: 0.1rem solid #FDB931 !important;
+  box-shadow: 0 0 5px #FDB931 !important;
+}
