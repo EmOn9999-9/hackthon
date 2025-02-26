@@ -1,11 +1,11 @@
-<?php include '../header.php'; ?>
+<?php include 'head_profile.php'; ?>
 
     <!-- Profile Section -->
     <div class="max-w-4xl mx-auto p-6 bg-black bg-opacity-20 shadow-lg rounded-lg mt-10 mb-16">
         <!-- Profile Photo -->
         <div class="flex justify-center">
             <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-gray-200">
-                <img src="images/plumber2.jpg" alt="Profile Photo" class="w-full h-full object-cover">
+                <img src="../images/plumber2.jpg" alt="Profile Photo" class="w-full h-full object-cover">
             </div>
         </div>
 
@@ -91,4 +91,4 @@
         </div>
     </div>
 
-<?php include '.../footer.php'; ?>
+<?php include 'foot_profile.php'; ?>
