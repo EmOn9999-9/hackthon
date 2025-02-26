@@ -34,7 +34,7 @@
 
             <!-- Copyright -->
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 pb-8">
-                <p>&copy; <?php echo date('Y'); ?> Your Company. All rights reserved.</p>
+                <p>&copy; <?php echo date('Y'); ?> FixIt. All rights reserved.</p>
             </div>
         </div>
     </footer>

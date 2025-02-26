@@ -228,7 +228,7 @@
     <div id="chatbot-interface">
       <!-- Chatbot Header -->
       <div id="chatbot-header">
-        <p>Chat with Us</p>
+        <p>Chat with Gorkhey</p>
       </div>
       <!-- Chatbot Chat Area -->
       <div id="chatbot-chat">
@@ -303,7 +303,7 @@
       setTimeout(() => {
         const botMessageDiv = document.createElement('div');
         botMessageDiv.className = 'chatbot-messages chatbot-received-messages';
-        botMessageDiv.innerHTML = `<p>This is a response from the bot.</p>`;
+        botMessageDiv.innerHTML = `<p>Great to hear that!</p>`;
         chatMessages.appendChild(botMessageDiv);
 
         // Scroll to Bottom
