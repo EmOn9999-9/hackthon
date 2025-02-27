@@ -20,7 +20,7 @@
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
-                        <img src="https://www.shutterstock.com/image-vector/carpenter-logo-design-rustic-retro-260nw-2189135689.jpg" alt="">
+                        <img src="Services_img/carpenter_logo.jpg" alt="">
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Carpenter</h3>
@@ -33,7 +33,7 @@
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
-                        <img src="https://c8.alamy.com/comp/2M56AD4/plumbing-logo-in-retro-or-vintage-style-plumber-logo-for-professional-business-concept-emblem-design-template-2M56AD4.jpg" alt="">
+                        <img src="Services_img/plumber_logo.jpg" alt="">
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Plumber</h3>
@@ -46,7 +46,7 @@
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
-                        <img src="https://media.istockphoto.com/id/1061291518/vector/electricity-icon.jpg?s=612x612&w=0&k=20&c=V94TC0s74UpqWt84LpfikgKfUsAeXPSQg_8mP2WpxTI=" alt="">
+                        <img src="Services_img/electrician_logo.jpg" alt="">
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Electrician</h3>
@@ -59,7 +59,7 @@
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
-                        <img src="https://c8.alamy.com/comp/2FPADKC/black-scissors-and-hair-comb-barber-tools-barbershop-logo-beauty-saloon-vector-illustration-isolated-on-white-2FPADKC.jpg" alt="">
+                        <img src="Services_img/barber_logo.jpg" alt="">
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Barber</h3>
@@ -72,7 +72,7 @@
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
-                        <img src="https://t3.ftcdn.net/jpg/05/72/39/66/360_F_572396628_GALUoM1YcR43BTt00Ipv3Vf7OrrZ22av.jpg" alt="">
+                        <img src="Services_img/painter_logo.jpg" alt="">
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Painter</h3>
@@ -85,7 +85,7 @@
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
-                        <img src="https://static.vecteezy.com/system/resources/previews/012/587/863/non_2x/vintage-retro-vacuum-cleaner-can-be-used-like-emblem-logo-badge-label-mark-poster-or-print-monochrome-graphic-art-illustration-engraving-woodcut-vector.jpg" alt="">
+                        <img src="Services_img/cleaner_logo.jpg" alt="">
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Cleaner</h3>
@@ -98,7 +98,7 @@
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
-                        <img src="https://img.freepik.com/premium-vector/gardening-logo-template-isolated-brand-identity-icon-abstract-vector-graphic_7109-3141.jpg" alt="">
+                        <img src="Services_img/gardener_logo.avif" alt="">
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Gardener</h3>
@@ -111,7 +111,7 @@
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
-                        <img src="https://img.freepik.com/premium-vector/mechanic-logo-illustration-vector-design_681672-97.jpg?w=360" alt="">
+                        <img src="Services_img/mechanic_logo.avif" alt="">
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Mechanic</h3>
