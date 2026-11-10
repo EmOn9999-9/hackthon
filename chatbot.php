@@ -85,9 +85,10 @@ function suggest_providers(string $slug): array
     $stmt->execute([$slug]);
     $providers = $stmt->fetchAll();
     $label = CATEGORIES[$slug]['label'];
+    $article = preg_match('/^[aeiou]/i', $label) ? 'an' : 'a';
 
     if (!$providers) {
-        return reply("Sounds like you need a $label, but none are listed yet. Check back soon!");
+        return reply("Sounds like you need $article $label, but none are listed yet. Check back soon!");
     }
     $links = array_map(fn ($p) => [
         'label' => $p['name'] . ($p['avg_rating'] ? " ★ {$p['avg_rating']}" : ''),
@@ -95,7 +96,7 @@ function suggest_providers(string $slug): array
     ], $providers);
     $links[] = ['label' => "All {$label}s", 'url' => 'providers.php?category=' . $slug];
 
-    return reply("Sounds like you need a $label. Here are our top-rated ones:", $links);
+    return reply("Sounds like you need $article $label. Here are our top-rated ones:", $links);
 }
 
 function reply(string $text, array $links = []): array
