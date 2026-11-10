@@ -1,9 +1,10 @@
+<?php require_once __DIR__ . '/includes/auth.php'; $user = current_user(); $notice = flash(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>FixIt - Find trusted local professionals</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -26,7 +27,7 @@
         </div>
 
         <!-- Hamburger Menu (Mobile) -->
-        <button class="md:hidden ml-2 inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-900 focus:outline-none">
+        <button id="mobile-menu-button" aria-label="Open menu" class="md:hidden ml-2 inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-900 focus:outline-none">
             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -45,9 +46,9 @@
                 </svg>
             </a>
             <div class="dropdown-menu absolute bg-white bg-opacity-50 shadow-lg rounded-md mt-2 py-2 w-48">
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Electrician</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Plumber</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Carpenter</a>
+                <?php foreach (CATEGORIES as $slug => $category): ?>
+                <a href="providers.php?category=<?= e($slug) ?>" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><?= e($category['label']) ?></a>
+                <?php endforeach; ?>
             </div>
             </div>
 
@@ -55,8 +56,15 @@
             <a href="about_us.php" class="text-gray-700 hover:text-gray-900">About Us</a>
         </div>
 
-        <!-- Contact Us Button (Right Side) -->
-        <div class="hidden md:flex items-center">
+        <!-- Account + Contact Us Button (Right Side) -->
+        <div class="hidden md:flex items-center gap-4">
+            <?php if ($user): ?>
+                <a href="dashboard.php" class="text-gray-700 hover:text-gray-900">Hi, <?= e($user['name']) ?> · Dashboard</a>
+                <a href="logout.php" class="text-gray-700 hover:text-gray-900 underline">Logout</a>
+            <?php else: ?>
+                <a href="become_pro.php" class="text-gray-700 hover:text-gray-900">Become a pro</a>
+                <a href="signin.php" class="text-gray-700 hover:text-gray-900">Sign in</a>
+            <?php endif; ?>
             <a href="contact.php">
                 <button class="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-gray-800/30 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20">
                     <span class="text-lg">Contact Us</span>
@@ -68,11 +76,35 @@
         </div>
         </div>
     </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 shadow-lg mx-4 rounded-lg px-4 py-3 space-y-2">
+        <a href="home.php" class="block text-gray-700">Home</a>
+        <a href="services.php" class="block text-gray-700">Services</a>
+        <a href="about_us.php" class="block text-gray-700">About Us</a>
+        <a href="contact.php" class="block text-gray-700">Contact Us</a>
+        <?php if ($user): ?>
+            <a href="dashboard.php" class="block text-gray-700">Dashboard</a>
+            <a href="logout.php" class="block text-gray-700">Logout</a>
+        <?php else: ?>
+            <a href="become_pro.php" class="block text-gray-700">Become a pro</a>
+            <a href="signin.php" class="block text-gray-700">Sign in</a>
+        <?php endif; ?>
+    </div>
     </nav>
+
+    <?php if ($notice): ?>
+    <div class="max-w-3xl mx-auto mt-4 px-4">
+        <div class="bg-white/90 border border-[#00ADB5] text-gray-800 rounded-lg px-4 py-3 shadow"><?= e($notice) ?></div>
+    </div>
+    <?php endif; ?>
 
     <!-- JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('mobile-menu-button').addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.toggle('hidden');
+            });
+
             const dropdowns = document.querySelectorAll('.dropdown');
 
             dropdowns.forEach(dropdown => {
@@ -127,6 +159,5 @@
                 }
             });
         });
-        const chat = document.getElementById("chatbot-chat");
 
     </script>

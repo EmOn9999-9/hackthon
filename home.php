@@ -283,32 +283,43 @@
       if (e.key === 'Enter') sendMessage();
     });
 
-    function sendMessage() {
+    function addMessage(text, type, links = []) {
+      const div = document.createElement('div');
+      div.className = 'chatbot-messages ' + (type === 'sent' ? 'chatbot-sent-messages' : 'chatbot-received-messages');
+      const p = document.createElement('p');
+      p.textContent = text; // textContent, never innerHTML, so typed HTML can't run
+      div.appendChild(p);
+      links.forEach(link => {
+        const a = document.createElement('a');
+        a.href = link.url;
+        a.textContent = '→ ' + link.label;
+        a.style.display = 'block';
+        a.style.textDecoration = 'underline';
+        a.style.marginTop = '4px';
+        div.appendChild(a);
+      });
+      chatMessages.appendChild(div);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    async function sendMessage() {
       const userMessage = chatInput.value.trim();
       if (userMessage === '') return;
 
-      // Append User Message
-      const userMessageDiv = document.createElement('div');
-      userMessageDiv.className = 'chatbot-messages chatbot-sent-messages';
-      userMessageDiv.innerHTML = `<p>${userMessage}</p>`;
-      chatMessages.appendChild(userMessageDiv);
-
-      // Clear Input
+      addMessage(userMessage, 'sent');
       chatInput.value = '';
 
-      // Scroll to Bottom
-      chatMessages.scrollTop = chatMessages.scrollHeight;
-
-      // Simulate Bot Response
-      setTimeout(() => {
-        const botMessageDiv = document.createElement('div');
-        botMessageDiv.className = 'chatbot-messages chatbot-received-messages';
-        botMessageDiv.innerHTML = `<p>Great to hear that!</p>`;
-        chatMessages.appendChild(botMessageDiv);
-
-        // Scroll to Bottom
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-      }, 1000);
+      try {
+        const response = await fetch('chatbot.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams({ message: userMessage }),
+        });
+        const data = await response.json();
+        addMessage(data.reply, 'received', data.links || []);
+      } catch (error) {
+        addMessage('Sorry, I could not connect. Please try again.', 'received');
+      }
     }
   </script>
 

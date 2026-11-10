@@ -1,4 +1,33 @@
-<?php include 'header.php'; ?>
+<?php
+require_once __DIR__ . '/includes/auth.php';
+
+$errors = [];
+$form = ['name' => current_user()['name'] ?? '', 'email' => current_user()['email'] ?? '', 'message' => ''];
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    check_csrf();
+    foreach ($form as $key => $_) {
+        $form[$key] = trim($_POST[$key] ?? '');
+    }
+    if ($form['name'] === '') {
+        $errors[] = 'Please enter your name.';
+    }
+    if (!filter_var($form['email'], FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Please enter a valid email address.';
+    }
+    if ($form['message'] === '') {
+        $errors[] = 'Please write a message.';
+    }
+    if (!$errors) {
+        db()->prepare('INSERT INTO contact_messages (name, email, message) VALUES (?, ?, ?)')
+            ->execute([$form['name'], $form['email'], $form['message']]);
+        flash("Thanks, {$form['name']}! We received your message and will get back to you soon.");
+        redirect('contact.php');
+    }
+}
+
+include 'header.php';
+?>
 
     <!-- Hero Section -->
     <header class=" bg-cover bg-center h-[400px] flex items-center justify-center relative">
@@ -16,25 +45,31 @@
                 <!-- Contact Form -->
                 <div>
     <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
-    <form class="space-y-6">
+    <form method="post" action="contact.php" class="space-y-6">
+        <?= csrf_field() ?>
+        <?php if ($errors): ?>
+            <div class="text-red-500 text-sm space-y-1">
+                <?php foreach ($errors as $error): ?><p><?= e($error) ?></p><?php endforeach; ?>
+            </div>
+        <?php endif; ?>
         <!-- Name -->
         <div>
             <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-            <input type="text" id="name" name="name" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900" required>
+            <input type="text" id="name" name="name" value="<?= e($form['name']) ?>" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900" required>
         </div>
         <!-- Email -->
         <div>
             <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-            <input type="email" id="email" name="email" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900" required>
+            <input type="email" id="email" name="email" value="<?= e($form['email']) ?>" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900" required>
         </div>
         <!-- Message -->
         <div>
             <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900" required></textarea>
+            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900" required><?= e($form['message']) ?></textarea>
         </div>
         <!-- Submit Button -->
         <div>
-            <button class="w-full h-[40px] bg-gradient-to-b from-[#d6cafe] to-[#9e81fe] border-none rounded-[50px] text-white font-semibold flex items-center justify-center gap-1.5 cursor-pointer shadow-[1px_3px_0px_#8b71ff] active:translate-x-[2px] active:translate-y-0 active:shadow-[0px_1px_0px_#8b71ff] active:pb-[1px] transition duration-300">
+            <button type="submit" class="w-full h-[40px] bg-gradient-to-b from-[#d6cafe] to-[#9e81fe] border-none rounded-[50px] text-white font-semibold flex items-center justify-center gap-1.5 cursor-pointer shadow-[1px_3px_0px_#8b71ff] active:translate-x-[2px] active:translate-y-0 active:shadow-[0px_1px_0px_#8b71ff] active:pb-[1px] transition duration-300">
                 Send Message
             </button>
         </div>

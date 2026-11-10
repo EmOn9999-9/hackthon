@@ -1,3 +1,28 @@
+<?php
+require_once __DIR__ . '/includes/auth.php';
+
+if (current_user()) {
+    redirect('home.php');
+}
+
+$error = null;
+$email = strtolower(trim($_POST['email'] ?? ''));
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    check_csrf();
+    $stmt = db()->prepare('SELECT id, name, password_hash FROM users WHERE email = ?');
+    $stmt->execute([$email]);
+    $user = $stmt->fetch();
+
+    if ($user && password_verify($_POST['password'] ?? '', $user['password_hash'])) {
+        login_user((int) $user['id']);
+        flash('Welcome back, ' . $user['name'] . '!');
+        redirect('home.php');
+    }
+    $error = 'Incorrect email or password.';
+}
+$notice = flash();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,12 +44,14 @@
             </div>
             <p class="text-gray-500">Welcome back!</p>
             
-            <form action="home.php" class="space-y-4">
+            <?php if ($notice): ?><p class="text-blue-600 text-sm"><?= e($notice) ?></p><?php endif; ?>
+            <form method="post" action="signin.php" class="space-y-4">
+                <?= csrf_field() ?>
                 <div>
-                    <input type="email" placeholder="name@email.com" class="w-full px-4 py-3 border rounded-[20px] focus:outline-none focus:ring-2 focus:ring-gray-900">
+                    <input type="email" name="email" value="<?= e($email) ?>" placeholder="name@email.com" required class="w-full px-4 py-3 border rounded-[20px] focus:outline-none focus:ring-2 focus:ring-gray-900">
                 </div>
                 <div class="relative">
-                    <input type="password" id="password" placeholder="Password" class="w-full px-4 py-3 border rounded-[20px] focus:outline-none focus:ring-2 focus:ring-gray-900" required>
+                    <input type="password" id="password" name="password" placeholder="Password" class="w-full px-4 py-3 border rounded-[20px] focus:outline-none focus:ring-2 focus:ring-gray-900" required>
                     <!-- Eye icon for password -->
                     <span class="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer" onclick="togglePasswordVisibility('password')">
                         <svg id="password-eye" class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -33,12 +60,7 @@
                         </svg>
                     </span>
                 </div>
-                <div class="flex items-center justify-between text-sm">
-                    <label class="flex items-center">
-                        <input type="checkbox" class="mr-2"> Remember me
-                    </label>
-                    <a href="#" class="text-gray-600 hover:underline">Reset password</a>
-                </div>
+                <?php if ($error): ?><p class="text-red-500 text-sm"><?= e($error) ?></p><?php endif; ?>
                 <button type="submit" class="w-full font-bold bg-gradient-to-r from-[#1089d3] to-[#12b1d1] text-white py-3 rounded-[20px] mt-5 shadow-[0_20px_10px_-15px_rgba(133,189,215,0.88)] hover:scale-105 hover:shadow-[0_23px_10px_-20px_rgba(133,189,215,0.88)] active:scale-95 active:shadow-[0_15px_10px_-10px_rgba(133,189,215,0.88)] transition-all duration-200 ease-in-out">Sign In</button>
             </form>
             

@@ -1,3 +1,49 @@
+<?php
+require_once __DIR__ . '/includes/auth.php';
+
+if (current_user()) {
+    redirect('home.php');
+}
+
+$errors = [];
+$name = trim($_POST['name'] ?? '');
+$email = strtolower(trim($_POST['email'] ?? ''));
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    check_csrf();
+    $password = $_POST['password'] ?? '';
+    $confirm = $_POST['confirm_password'] ?? '';
+
+    if ($name === '') {
+        $errors[] = 'Please enter your name.';
+    }
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Please enter a valid email address.';
+    }
+    if (strlen($password) < 8) {
+        $errors[] = 'Password must be at least 8 characters.';
+    }
+    if ($password !== $confirm) {
+        $errors[] = 'Passwords do not match.';
+    }
+
+    if (!$errors) {
+        $exists = db()->prepare('SELECT 1 FROM users WHERE email = ?');
+        $exists->execute([$email]);
+        if ($exists->fetchColumn()) {
+            $errors[] = 'An account with this email already exists.';
+        }
+    }
+
+    if (!$errors) {
+        db()->prepare('INSERT INTO users (name, email, password_hash) VALUES (?, ?, ?)')
+            ->execute([$name, $email, password_hash($password, PASSWORD_DEFAULT)]);
+        login_user((int) db()->lastInsertId());
+        flash('Welcome to FixIt, ' . $name . '!');
+        redirect('home.php');
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,18 +64,19 @@
             <p class="text-gray-500">Create your account</p>
             
             <!-- Sign Up Form -->
-            <form id="signupForm" class="space-y-4">
+            <form id="signupForm" method="post" action="signup.php" class="space-y-4" novalidate>
+                <?= csrf_field() ?>
                 <!-- Full Name -->
                 <div>
-                    <input type="text" placeholder="Full Name" class="w-full px-4 py-3 border rounded-[20px] focus:outline-none focus:ring-2 focus:ring-gray-900" required>
+                    <input type="text" name="name" value="<?= e($name) ?>" placeholder="Full Name" class="w-full px-4 py-3 border rounded-[20px] focus:outline-none focus:ring-2 focus:ring-gray-900" required>
                 </div>
                 <!-- Email -->
                 <div>
-                    <input type="email" placeholder="name@email.com" class="w-full px-4 py-3 border rounded-[20px] focus:outline-none focus:ring-2 focus:ring-gray-900" required>
+                    <input type="email" name="email" value="<?= e($email) ?>" placeholder="name@email.com" class="w-full px-4 py-3 border rounded-[20px] focus:outline-none focus:ring-2 focus:ring-gray-900" required>
                 </div>
                 <!-- Password -->
                 <div class="relative">
-                    <input type="password" id="password" placeholder="Password" class="w-full px-4 py-3 border rounded-[20px] focus:outline-none focus:ring-2 focus:ring-gray-900" required>
+                    <input type="password" id="password" name="password" minlength="8" placeholder="Password" class="w-full px-4 py-3 border rounded-[20px] focus:outline-none focus:ring-2 focus:ring-gray-900" required>
                     <!-- Eye icon for password -->
                     <span class="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer" onclick="togglePasswordVisibility('password')">
                         <svg id="password-eye" class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -40,7 +87,7 @@
                 </div>
                 <!-- Confirm Password -->
                 <div class="relative">
-                    <input type="password" id="confirmPassword" placeholder="Confirm Password" class="w-full px-4 py-3 border rounded-[20px] focus:outline-none focus:ring-2 focus:ring-gray-900" required>
+                    <input type="password" id="confirmPassword" name="confirm_password" placeholder="Confirm Password" class="w-full px-4 py-3 border rounded-[20px] focus:outline-none focus:ring-2 focus:ring-gray-900" required>
                     <!-- Eye icon for confirm password -->
                     <span class="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer" onclick="togglePasswordVisibility('confirmPassword')">
                         <svg id="confirmPassword-eye" class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,7 +97,11 @@
                     </span>
                 </div>
                 <!-- Error Message -->
-                <div id="errorMessage" class="text-red-500 text-sm hidden">Passwords do not match!</div>
+                <?php if ($errors): ?>
+                    <div class="text-red-500 text-sm space-y-1">
+                        <?php foreach ($errors as $error): ?><p><?= e($error) ?></p><?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
                 
                 <!-- Sign Up Button -->
                 <button type="submit" class="w-full font-bold bg-gradient-to-r from-[#1089d3] to-[#12b1d1] text-white py-3 rounded-[20px] mt-5 shadow-[0_20px_10px_-15px_rgba(133,189,215,0.88)] hover:scale-105 hover:shadow-[0_23px_10px_-20px_rgba(133,189,215,0.88)] active:scale-95 active:shadow-[0_15px_10px_-10px_rgba(133,189,215,0.88)] transition-all duration-200 ease-in-out">Sign UP</button>
@@ -114,24 +165,6 @@
             }
         }
 
-        // Form submission handling
-        document.getElementById('signupForm').addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent form submission
-            
-            const password = document.getElementById('password').value;
-            const confirmPassword = document.getElementById('confirmPassword').value;
-            const errorMessage = document.getElementById('errorMessage');
-
-            if (password !== confirmPassword) {
-                errorMessage.classList.remove('hidden');
-                return;
-            }
-
-            errorMessage.classList.add('hidden');
-            
-            // If passwords match, redirect to home.php
-            window.location.href = 'home.php';
-        });
 
         // Initialize Swiper
         const swiper = new Swiper('.swiper', {

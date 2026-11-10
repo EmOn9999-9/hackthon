@@ -16,7 +16,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
                 <!-- Carpenter -->
-                <a href="">
+                <a href="providers.php?category=carpenter">
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
@@ -29,7 +29,7 @@
                 </a>
 
                 <!-- Plumber -->
-                 <a href="">
+                 <a href="providers.php?category=plumber">
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
@@ -42,7 +42,7 @@
                 </a>
 
                 <!-- Electrician -->
-                 <a href="">
+                 <a href="providers.php?category=electrician">
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
@@ -55,7 +55,7 @@
                 </a>
 
                 <!-- Barber -->
-                 <a href="">
+                 <a href="providers.php?category=barber">
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
@@ -68,7 +68,7 @@
                 </a>
 
                 <!-- Painter -->
-                 <a href="">
+                 <a href="providers.php?category=painter">
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
@@ -81,7 +81,7 @@
                 </a>
 
                 <!-- Cleaner -->
-                 <a href="">
+                 <a href="providers.php?category=cleaner">
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
@@ -94,7 +94,7 @@
                 </a>
 
                 <!-- Gardener -->
-                 <a href="">
+                 <a href="providers.php?category=gardener">
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
@@ -107,7 +107,7 @@
                 </a>
 
                 <!-- Mechanic -->
-                 <a href="">
+                 <a href="providers.php?category=mechanic">
                 <div class="bg-[#00ADB5] p-6 border-4 border-[#EEEEEE] rounded-lg shadow-lg text-center text-white font-poppins transition-all duration-300 hover:-translate-y-2.5">
                 <div class="w-20 h-20 border-4 border-[#EEEEEE] rounded-full overflow-hidden mx-auto flex items-center justify-center">
                     <svg viewBox="0 0 448 512" class="w-10 fill-current">
